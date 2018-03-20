@@ -1,0 +1,4 @@
+#忽略对node_modules文件跟踪
+node_modules/
+#忽略对.sass-cache文件跟踪
+.sass-cache/

@@ -1,0 +1,187 @@
+//注册页头部
+.header{
+	width: 100%;
+	.header_con{
+		width: 1200px;
+		line-height: 146px;
+		margin:0 auto;
+		font-size: 14px;
+		.logo{
+			margin-top: 39px;
+			float: left;
+			div{
+				width: 140px;
+				height: 60px;
+				background: url(../image/logo.png) no-repeat center top;
+				overflow: hidden;
+			}
+		}
+		.help{
+			float: right;
+			.pho_icon{
+				display: inline-block;
+				vertical-align: middle;
+				width:20px;
+				height:20px;
+				margin-left: 20px;
+				margin-right: 4px;
+				background: url(../image/headico.png) no-repeat 0 0;
+			}
+		}
+	}
+}
+.header_shadow{
+	width:100%;
+	height:8px;
+	background: url(../image/headerbg.png) repeat-x left 0;
+	margin-bottom: 12px;
+}
+
+// content内容
+.content{
+	width: 100%;
+	height: 535px;
+	position: relative;
+	margin-top: 10px;
+	background: url(../image/register/memberbg.jpg) no-repeat center top;
+	.reg_box{
+		width: 298px;
+		border:1px solid rgb(232, 232, 232);
+		position: absolute;
+		left: 50%;
+		top:25px;
+		padding:30px 40px;
+		margin-left: 150px;
+		margin-bottom: 20px;
+		h3{
+			margin-bottom: 20px;
+		}
+		form{
+			.memicon{
+				float: left;
+				width: 26px;
+				height: 26px;
+				padding-right:4px;
+				margin: 0 4px 0 6px;
+				border-right: 1px solid rgb(232, 232, 232);
+				background: url(../image/register/memberico.gif) no-repeat;
+			}
+			.inpBox{
+				padding: 4px 0;
+				border:1px solid rgb(232, 232, 232);
+				margin-bottom: 10px;
+				input{
+					width: 240px;
+					line-height: 26px;
+					border: 0;
+					margin-left: 4px;
+				}
+			}
+			.phoneNum{
+				.memicon01{
+						background-position: 0 top;
+					}
+			}
+			.password{
+				.memicon03{
+						background-position: -26px top;
+					}
+			}
+			.remember{
+				width: 100%;
+				color: #999;
+				padding: 4px 0 6px 0;
+				.autoLog{
+					display: inline;
+					font-size: 12px;
+					input,span{
+						vertical-align: middle;
+					}
+					span{
+						padding-bottom:3px;
+					}
+				}
+				a{
+					display: inline;
+					float: right;
+					font-size: 12px;
+					color: #999;
+					line-height: 24px;
+				}
+			}
+			.sub_but{
+				width:100%;
+				line-height: 48px;
+				background: #333;
+				color: #fff;
+				font-size: 18px;
+				border-radius: 3px;
+				margin-top: 30px;
+				border: 0;
+			}
+			.goReg{
+				float: right;
+				width: 50px;
+				text-align: right;
+				font-size: 12px;
+				color:#669aca;
+				margin:20px  0 7px 0;
+			}
+			.otherWay{
+				margin-top: 40px;
+				height: 10px;
+				border-bottom: 1px solid #e8e8e8;
+				position: relative;
+				p{
+					font-size: 12px;
+					color: #999;
+					position: absolute;
+					bottom: -10px;
+					left: 50%;
+					margin-left: -40px;
+					width: 80px;
+					background: #fff;
+
+				}
+			}
+			.wcwp{
+				padding-top:30px;
+				display:flex;
+				justify-content:center;
+				.wChat{
+					width:100px;
+					height: 35px;
+					text-align: center;
+					a{
+						opacity: .5;
+						display: inline-block;
+						width: 34px;
+						height: 35px;
+						background: url(../image/register/jointLogin.gif) no-repeat -34px top;
+					}
+					a:hover{
+							opacity: 1;
+						}
+				}
+				.weiBo{
+					width: 100px;
+					height: 35px;
+					text-align: center;
+					a{
+						opacity: .5;
+						display: inline-block;
+						width: 34px;
+						height: 35px;
+						background: url(../image/register/jointLogin.gif) no-repeat -70px top;
+						
+					}
+					a:hover{
+							opacity: 1;
+						}
+
+				}
+			}
+
+		}
+	}
+}

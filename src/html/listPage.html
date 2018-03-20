@@ -1,0 +1,941 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>列表页</title>
+	<link rel="stylesheet" type="text/css" href="../css/common.css"> <link href="../css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="../css/header.css">
+	<link rel="stylesheet" type="text/css" href="../css/listPage.css">
+	<link rel="stylesheet" type="text/css" href="../css/footer.css">
+</head>
+<body>
+<!-- header -->
+	<div class="header">
+		<div class="header_c">
+			<!-- 顶部通栏 -->
+			<div class="headerbar">
+				<div class="headerbar_c claerfix">
+					<div class="headerbar_left claerfix">
+						<div class="phone">
+							<em class="hico1"></em>
+							<span>4000-250-630</span>
+						</div>
+						<div class="headerAPP">
+							<a href="#" title="下载美西APP" class="header_down">
+								<em class="hico2"></em>下载美西APP
+							</a>
+							<a href="#" target="_black" title="下载美西APP" class="QRcode">
+								<em></em>
+								<img src="../image/QRcode.png"/>
+								扫码下载
+							</a>
+						
+						</div>
+					</div>
+					<div class="headerbar_right claerfix">
+						<div class="headerUser">
+							<a href="#" title="登录">登录</a>
+							<a href="register.html" title="注册">注册</a>
+						</div>
+						<div class="headerCart">
+							<a href="#"  title="购物袋"><em class="hico3"></em>购物袋（<span>0</span>）</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- logo和搜索框 -->
+			<div class="header_middle">
+				<div class="header_logo">
+					<a href="#" class="logo" title="美西"></a>
+				</div>
+				<div class="header_search">
+						<input type="text" class="h_search_int" placeholder="请输入关键字">
+						<a href="#" class="h_search_btn"><em class="hico4"></em></a>
+					</div>
+			</div>
+			<!-- 导航栏 -->
+			<div class="header_nav claerfix">
+				<div class="header_nav_menu">
+					<ul class="h_nav_list">
+						<li><a href="javascript:;">首页</a></li>
+						<li><a href="javascript:;">新近单品</a></li>
+						<li><a href="javascript:;">全球购</a></li>
+						<li><a href="javascript:;">女士</a></li>
+						<li><a href="javascript:;">男仕</a></li>
+						<li><a href="javascript:;">家居生活</a></li>
+						<li><a href="javascript:;">腕表</a></li>
+						<li><a href="javascript:;">品牌</a></li>
+						<li><a href="javascript:;">Mzine</a></li>
+					</ul>
+				</div>
+				<div class="h_nav_con">
+					<div class="h_nav_spe">
+						<div class="nav_arrows"></div>
+					</div>
+					<div class="h_nav_spe">
+						<ul>
+							<li class="h_nav_spe_fir"><a href="#">男仕 Man</a></li>
+							<li><a href="#">包袋 Bags</a></li>
+							<li><a href="#">配饰 Accessories</a></li>
+							<li><a href="#">鞋履 Shoes</a></li>
+							<li><a href="#">服装 Clothes</a></li>
+						</ul>
+						<ul>
+							<li  class="h_nav_spe_fir"><a href="#">女士 Woman</a></li>
+							<li><a href="#">包袋 Bags</a></li>
+							<li><a href="#">配饰 Accessories</a></li>
+							<li><a href="#">鞋履 Shoes</a></li>
+							<li><a href="#">服装 Clothes</a></li>
+						</ul>
+						<div class="nav_arrows"></div>
+					</div>
+					<div class="h_nav_spe">
+						<div class="nav_arrows"></div>
+					</div>
+					<div class="h_nav_spe">
+						<ul>
+							<li class="h_nav_spe_fir"><a href="#">包袋Bags</a></li>
+							<li><a href="#">所有包袋</a></li>
+							<li><a href="#">手提包 Totes</a></li>
+							<li><a href="#">单肩包 Shoulder Bags</a></li>
+							<li><a href="#">斜挎包 Messenger Bags</a></li>
+							<li><a href="#">手拿包 Clutch Bags</a></li>
+							<li><a href="#">双肩包 Travel Bags</a></li>
+						</ul>
+						<ul>
+							<li class="h_nav_spe_fir"><a href="#">配饰Accessories</a></li>
+							<li><a href="#">所有配饰</a></li>
+							<li><a href="#">手表 Watches</a></li>
+							<li><a href="#">太阳眼镜 Sunglasses</a></li>
+							<li><a href="#">饰品 Jewelry</a></li>
+							<li><a href="#">腰带 Belts</a></li>
+							<li><a href="#">围巾 Scarf</a></li>
+							<li><a href="#">小配件 Small Acc.</a></li>
+						</ul>
+						<ul>
+							<li class="h_nav_spe_fir"><a href="#">包袋Bags</a></li>
+							<li><a href="#">所有包袋</a></li>
+							<li><a href="#">手提包 Totes</a></li>
+							<li><a href="#">单肩包 Shoulder Bags</a></li>
+							<li><a href="#">斜挎包 Messenger Bags</a></li>
+							<li><a href="#">手拿包 Clutch Bags</a></li>
+							<li><a href="#">双肩包 Travel Bags</a></li>
+						</ul>
+						<ul>
+							<li class="h_nav_spe_fir"><a href="#">配饰Accessories</a></li>
+							<li><a href="#">所有配饰</a></li>
+							<li><a href="#">手表 Watches</a></li>
+							<li><a href="#">太阳眼镜 Sunglasses</a></li>
+							<li><a href="#">饰品 Jewelry</a></li>
+							<li><a href="#">腰带 Belts</a></li>
+							<li><a href="#">围巾 Scarf</a></li>
+							<li><a href="#">小配件 Small Acc.</a></li>
+						</ul>
+						<div class="nav_arrows"></div>
+					</div>
+					<div class="h_nav_spe">
+						<ul>
+							<li class="h_nav_spe_fir"><a href="#">包袋Bags</a></li>
+							<li><a href="#">所有包袋</a></li>
+							<li><a href="#">手提包 Totes</a></li>
+							<li><a href="#">单肩包 Shoulder Bags</a></li>
+							<li><a href="#">斜挎包 Messenger Bags</a></li>
+							<li><a href="#">手拿包 Clutch Bags</a></li>
+							<li><a href="#">双肩包 Travel Bags</a></li>
+						</ul>
+						<ul>
+							<li class="h_nav_spe_fir"><a href="#">配饰Accessories</a></li>
+							<li><a href="#">所有配饰</a></li>
+							<li><a href="#">手表 Watches</a></li>
+							<li><a href="#">太阳眼镜 Sunglasses</a></li>
+							<li><a href="#">饰品 Jewelry</a></li>
+							<li><a href="#">腰带 Belts</a></li>
+							<li><a href="#">围巾 Scarf</a></li>
+							<li><a href="#">小配件 Small Acc.</a></li>
+						</ul>
+						<ul>
+							<li class="h_nav_spe_fir"><a href="#">包袋Bags</a></li>
+							<li><a href="#">所有包袋</a></li>
+							<li><a href="#">手提包 Totes</a></li>
+							<li><a href="#">单肩包 Shoulder Bags</a></li>
+							<li><a href="#">斜挎包 Messenger Bags</a></li>
+							<li><a href="#">手拿包 Clutch Bags</a></li>
+							<li><a href="#">双肩包 Travel Bags</a></li>
+						</ul>
+						<ul>
+							<li class="h_nav_spe_fir"><a href="#">配饰Accessories</a></li>
+							<li><a href="#">所有配饰</a></li>
+							<li><a href="#">手表 Watches</a></li>
+							<li><a href="#">太阳眼镜 Sunglasses</a></li>
+							<li><a href="#">饰品 Jewelry</a></li>
+							<li><a href="#">腰带 Belts</a></li>
+							<li><a href="#">围巾 Scarf</a></li>
+							<li><a href="#">小配件 Small Acc.</a></li>
+						</ul>
+						<div class="nav_arrows"></div>
+					</div>
+					<div class="h_nav_spe">
+						<ul>
+							<li class="h_nav_spe_fir"><a href="#">所有 家居生活</a></li>
+							<li><a href="#">美妆个护</a></li>
+							<li><a href="#">品质家居</a></li>
+							<li><a href="#">厨房天地</a></li>
+							<li><a href="#">户外旅行</a></li>
+							<li><a href="#">创意生活</a></li>
+						</ul>
+						<ul>
+							<li class="h_nav_spe_fir"><a href="#">所有品牌</a></li>
+							<li><a href="#">Mazzzk 寐刻</a></li>
+							<li><a href="#">Grow Gorgeous</a></li>
+							<li><a href="#">Refa 黎珐</a></li>
+							<li><a href="#">RIMOWA 日默瓦</a></li>
+							<li><a href="#">Brookstone</a></li>
+							<li><a href="#">GOC IN C 指挥官</a></li>
+						</ul>
+						<div class="nav_arrows"></div>
+					</div>
+					<div class="h_nav_spe">
+						<ul>
+							<li class="h_nav_spe_fir"><a href="#">男仕腕表</a></li>
+							<li><a href="#">女士腕表</a></li>
+							<li><a href="#">石英石</a></li>
+							<li><a href="#">机械表</a></li>
+						</ul>
+						<ul>
+							<li class="h_nav_spe_fir"><a href="#">热门品牌</a></li>
+							<li><a href="#">sevenfriday</a></li>
+							<li><a href="#">Calvin Klein 卡尔文·克莱恩</a></li>
+							<li><a href="#">Daniel Wellington 丹尼尔·惠灵顿</a></li>
+							<li><a href="#">Tissot 天梭</a></li>
+							<li><a href="#">OMEGA 欧米茄</a></li>
+							<li><a href="#">Longines 浪琴</a></li>
+
+						</ul>
+						<div class="nav_arrows"></div>
+					</div>
+					<div class="h_nav_spe">
+						<ul>
+							<li class="h_nav_spe_fir"><a href="#">国际大牌 Luxury Brand</a></li>
+							<li><a href="#">Diesel 迪赛</a></li>
+							<li><a href="#">Chloe 蔻依</a></li>
+							<li><a href="#">Dior 迪奥</a></li>
+							<li><a href="#">BVLGARI 宝格丽</a></li>
+							<li><a href="#">3.1 Phillip Lim 菲利林</a></li>
+							<li><a href="#">Love Moschino 莫斯奇诺</a></li>
+							<li><a href="#">Giuseppe Zanotti 朱塞佩·萨诺</a></li>
+							<li><a href="#">Moschino 莫斯奇诺</a></li>
+						</ul>
+						<ul>
+							<li class="h_nav_spe_fir"><a href="#">国际大牌 Luxury Brand</a></li>
+							<li><a href="#">Diesel 迪赛</a></li>
+							<li><a href="#">Chloe 蔻依</a></li>
+							<li><a href="#">Dior 迪奥</a></li>
+							<li><a href="#">BVLGARI 宝格丽</a></li>
+							<li><a href="#">3.1 Phillip Lim 菲利林</a></li>
+							<li><a href="#">Love Moschino 莫斯奇诺</a></li>
+							<li><a href="#">Giuseppe Zanotti 朱塞佩·萨诺</a></li>
+							<li><a href="#">Moschino 莫斯奇诺</a></li>
+						</ul>
+						<div class="nav_arrows"></div>
+					</div>
+					<div class="h_nav_spe">
+						<div class="nav_arrows"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header_shadow"></div>
+	</div>
+<!-- content -->
+	<div class="container">
+		<div class="content">
+			<div class="con_tit">新近单品</div>
+			<div class="sub_con_div claerfix">	
+				<div class="con_left">
+					<div class="screen classify">
+						<div class="listTitle">
+							<span class="lTitle_text">商品分类</span>
+							<span class="lTitle_r">－</span>
+						</div>
+						<ul class="claList">
+							<li class="claListLi">
+								<a href="javascript:;" class="cLLi_tab"><em></em>包袋</a>
+								<ul class="creLife">
+									<li><a href="javascript:;"><em></em>选择全部</a></li>
+									<li><a href="javascript:;"><em></em>手提包</a></li>
+									<li><a href="javascript:;"><em></em>单肩包</a></li>
+									<li><a href="javascript:;"><em></em>斜挎包</a></li>
+									<li><a href="javascript:;"><em></em>手拿包</a></li>
+									<li><a href="javascript:;"><em></em>双肩包</a></li>
+								</ul>
+							</li>
+							<li class="claListLi">
+								<a href="javascript:;" class="cLLi_tab"><em></em>配饰</a>
+								<ul class="creLife">
+									<li><a href="javascript:;"><em></em>选择全部</a></li>
+									<li><a href="javascript:;"><em></em>饰品</a></li>
+									<li><a href="javascript:;"><em></em>太阳眼镜</a></li>
+									<li><a href="javascript:;"><em></em>腰带</a></li>
+									<li><a href="javascript:;"><em></em>帽子</a></li>
+									<li><a href="javascript:;"><em></em>小配件</a></li>
+									<li><a href="javascript:;"><em></em>短钱包</a></li>
+								</ul>
+							</li>
+							<li class="claListLi">
+								<a href="javascript:;" class="cLLi_tab"><em></em>鞋履</a>
+								<ul class="creLife">
+									<li><a href="javascript:;"><em></em>选择全部</a></li>
+									<li><a href="javascript:;"><em></em>单鞋</a></li>
+									<li><a href="javascript:;"><em></em>休闲皮鞋</a></li>
+									<li><a href="javascript:;"><em></em>靴子</a></li>
+									<li><a href="javascript:;"><em></em>凉鞋</a></li>
+									<li><a href="javascript:;"><em></em>正装皮鞋</a></li>
+									<li><a href="javascript:;"><em></em>运动鞋</a></li>
+								</ul>
+							</li>
+							<li class="claListLi">
+								<a href="javascript:;" class="cLLi_tab"><em></em>美妆个护</a>
+								<ul class="creLife">
+									<li><a href="javascript:;"><em></em>选择全部</a></li>
+									<li><a href="javascript:;"><em></em>面部护理</a></li>
+									<li><a href="javascript:;"><em></em>身体护理</a></li>
+									<li><a href="javascript:;"><em></em>香氛精油</a></li>
+									<li><a href="javascript:;"><em></em>彩妆</a></li>
+									<li><a href="javascript:;"><em></em>美妆仪器</a></li>
+									<li><a href="javascript:;"><em></em>护理仪器</a></li>
+								</ul>
+							<li class="claListLi">
+								<a href="javascript:;" class="cLLi_tab"><em></em>腕表</a>
+								<ul class="creLife">
+									<li><a href="javascript:;"><em></em>选择全部</a></li>
+									<li><a href="javascript:;"><em></em>单鞋</a></li>
+									<li><a href="javascript:;"><em></em>休闲皮鞋</a></li>
+									<li><a href="javascript:;"><em></em>靴子</a></li>
+									<li><a href="javascript:;"><em></em>凉鞋</a></li>
+									<li><a href="javascript:;"><em></em>正装皮鞋</a></li>
+									<li><a href="javascript:;"><em></em>运动鞋</a></li>
+								</ul>
+							</li>
+							<li class="claListLi">
+								<a href="javascript:;" class="cLLi_tab"><em></em>服装</a>
+								<ul class="creLife">
+									<li><a href="javascript:;"><em></em>选择全部</a></li>
+									<li><a href="javascript:;"><em></em>单鞋</a></li>
+									<li><a href="javascript:;"><em></em>休闲皮鞋</a></li>
+									<li><a href="javascript:;"><em></em>靴子</a></li>
+									<li><a href="javascript:;"><em></em>凉鞋</a></li>
+									<li><a href="javascript:;"><em></em>正装皮鞋</a></li>
+									<li><a href="javascript:;"><em></em>运动鞋</a></li>
+								</ul>
+							</li>
+							<li class="claListLi">
+								<a href="javascript:;" class="cLLi_tab"><em></em>品质家居</a>
+								<ul class="creLife">
+									<li><a href="javascript:;"><em></em>选择全部</a></li>
+									<li><a href="javascript:;"><em></em>单鞋</a></li>
+									<li><a href="javascript:;"><em></em>休闲皮鞋</a></li>
+									<li><a href="javascript:;"><em></em>靴子</a></li>
+									<li><a href="javascript:;"><em></em>凉鞋</a></li>
+									<li><a href="javascript:;"><em></em>正装皮鞋</a></li>
+									<li><a href="javascript:;"><em></em>运动鞋</a></li>
+								</ul>
+							</li>
+							<li class="claListLi">
+								<a href="javascript:;" class="cLLi_tab"><em></em>厨房天地</a>
+								<ul class="creLife">
+									<li><a href="javascript:;"><em></em>选择全部</a></li>
+									<li><a href="javascript:;"><em></em>单鞋</a></li>
+									<li><a href="javascript:;"><em></em>休闲皮鞋</a></li>
+									<li><a href="javascript:;"><em></em>靴子</a></li>
+									<li><a href="javascript:;"><em></em>凉鞋</a></li>
+									<li><a href="javascript:;"><em></em>正装皮鞋</a></li>
+									<li><a href="javascript:;"><em></em>运动鞋</a></li>
+								</ul>
+							</li>
+							<li class="claListLi">
+								<a href="javascript:;" class="cLLi_tab"><em></em>户外旅行</a>
+								<ul class="creLife">
+									<li><a href="javascript:;"><em></em>选择全部</a></li>
+									<li><a href="javascript:;"><em></em>单鞋</a></li>
+									<li><a href="javascript:;"><em></em>休闲皮鞋</a></li>
+									<li><a href="javascript:;"><em></em>靴子</a></li>
+									<li><a href="javascript:;"><em></em>凉鞋</a></li>
+									<li><a href="javascript:;"><em></em>正装皮鞋</a></li>
+									<li><a href="javascript:;"><em></em>运动鞋</a></li>
+								</ul>
+							</li>
+							<li class="claListLi">
+								<a href="javascript:;" class="cLLi_tab"><em></em>创意生活</a>
+								<ul class="creLife">
+									<li><a href="javascript:;"><em></em>选择全部</a></li>
+									<li><a href="javascript:;"><em></em>单鞋</a></li>
+									<li><a href="javascript:;"><em></em>休闲皮鞋</a></li>
+									<li><a href="javascript:;"><em></em>靴子</a></li>
+									<li><a href="javascript:;"><em></em>凉鞋</a></li>
+									<li><a href="javascript:;"><em></em>正装皮鞋</a></li>
+									<li><a href="javascript:;"><em></em>运动鞋</a></li>
+								</ul>	
+							</li>
+						</ul>
+					</div>
+					<div class="screen sex">
+						<div class="listTitle">
+							<span class="lTitle_text">性别</span>
+							<span class="lTitle_r">+</span>
+						</div>
+						<ul class="claList">
+							<li><a href="javascript:;"><em></em>男女</a></li>
+							<li><a href="javascript:;"><em></em>男士</a></li>
+							<li><a href="javascript:;"><em></em>女士</a></li>
+							<li><a href="javascript:;"><em></em>儿童</a></li>
+							<li><a href="javascript:;"><em></em>女童</a></li>
+						</ul>
+					</div>
+					<div class="screen brand">
+						<div class="listTitle">
+							<span class="lTitle_text">品牌</span>
+							<span class="lTitle_r">＋</span>
+						</div>
+						<ul class="claList brand_box">
+							<div class="brand_box_con">
+								<ul class="brand_con_ul">
+									<li><a href="javascript:;"><em></em>Alberta Ferretti 阿尔伯特-菲尔蒂</a></li>
+									<li><a href="javascript:;"><em></em>Alexander McQueen 亚历山大·麦昆</a></li>
+									<li><a href="javascript:;"><em></em>Alexander Wang 亚历山大.王</a></li>
+									<li><a href="javascript:;"><em></em>Aquascutum 雅格狮丹</a></li>
+									<li><a href="javascript:;"><em></em>Burberry 博柏利</a></li>
+									<li><a href="javascript:;"><em></em>Armada</a></li>
+									<li><a href="javascript:;"><em></em>Armani Jeans 阿玛尼牛仔</a></li>
+									<li><a href="javascript:;"><em></em>Balenciaga 巴黎世家</a></li>
+									<li><a href="javascript:;"><em></em>Bally 巴利</a></li>
+									<li><a href="javascript:;"><em></em>Balmain 巴尔曼</a></li>
+									<li><a href="javascript:;"><em></em>Bardot </a></li>
+									<li><a href="javascript:;"><em></em>BGTHREE by XY.LIU </a></li>
+									<li><a href="javascript:;"><em></em>Biotulin 碧欧图灵</a></li>
+									<li><a href="javascript:;"><em></em>BLBM 菠萝斑马</a></li>
+									<li><a href="javascript:;"><em></em>Bottega Veneta 葆蝶家</a></li>
+									<li><a href="javascript:;"><em></em>Buffalo 野牛艺术</a></li>
+									<li><a href="javascript:;"><em></em>BVLGARI 宝格丽</a></li>
+									<li><a href="javascript:;"><em></em>CANADA GOOSE </a></li>
+									<li><a href="javascript:;"><em></em>CANVAS </a></li>
+									<li><a href="javascript:;"><em></em>Chanel 香奈儿</a></li>
+									<li><a href="javascript:;"><em></em>Charlotte Olympia 夏洛特·奥林匹亚</a></li>
+									<li><a href="javascript:;"><em></em>Chloe 蔻依</a></li>
+									<li><a href="javascript:;"><em></em>Clarins</a></li>
+									<li><a href="javascript:;"><em></em>CODAGE PARIS </a></li>
+									<li><a href="javascript:;"><em></em>COMME des GARCONS 川久保玲CdG</a></li>
+								</ul>
+								<div class="scroll_bar"></div>
+							</div>
+						</ul>
+					</div>
+					<div class="screen price">
+						<div class="listTitle">
+							<span class="lTitle_text">价格</span>
+							<span class="lTitle_r">＋</span>
+						</div>
+						<ul class="claList">
+							<div class="price_range">
+								<div class="price_choose">
+									<input type="text" title="最低价" placeholder="￥最低价" class="minPrice">
+									<span>-</span>
+									<input type="text" title="最高价" placeholder="￥最高价" class="maxPrice">
+								</div>
+								<button class="affirm">确认</button>
+							</div>
+						</ul>
+					</div>
+					<div class="screen color">
+						<div class="listTitle">
+							<span class="lTitle_text">颜色</span>
+							<span class="lTitle_r">＋</span>
+						</div>
+						<ul class="claList">
+							<div class="color_list">
+								<ul>
+									<li><a href="javascript:;"><em></em><span></span>黑色</a></li>
+									<li><a href="javascript:;"><em></em><span></span>白色</a></li>
+									<li><a href="javascript:;"><em></em><span></span>粉色</a></li>
+									<li><a href="javascript:;"><em></em><span></span>红色</a></li>
+									<li><a href="javascript:;"><em></em><span></span>蓝色</a></li>
+									<li><a href="javascript:;"><em></em><span></span>绿色</a></li>
+									<li><a href="javascript:;"><em></em><span></span>灰色</a></li>
+									<li><a href="javascript:;"><em></em><span></span>金色</a></li>
+									<li><a href="javascript:;"><em></em><span></span>银色</a></li>
+									<li><a href="javascript:;"><em></em><span></span>棕色</a></li>
+									<li><a href="javascript:;"><em></em><span></span>橘色</a></li>
+									<li><a href="javascript:;"><em></em><span></span>紫色</a></li>
+									<li><a href="javascript:;"><em></em><span></span>黄色</a></li>
+									<li><a href="javascript:;"><em></em><span></span>米色</a></li>
+									<li><a href="javascript:;"><em></em><span></span>多色</a></li>
+									<li><a href="javascript:;"><em></em><span></span>经典</a></li>
+									<li><a href="javascript:;"><em></em><span></span>动物花纹</a></li>
+									<li><a href="javascript:;"><em></em><span></span>透明</a></li>
+								</ul>
+							</div>
+						</ul>
+					</div>
+				</div>
+				<div class="con_right">
+					<div class="choosed_box claerfix">
+						<p style="width: 83px;font-size: 14px;font-weight: bold;">已选择：</p>
+						<div class="choosed_show">
+							<ul class="cho_show_list"></ul>
+						</div>
+					</div>
+					<div class="con_r_header">
+						<div class="con_r_head_l claerfix">
+							<span>排序：</span>
+							<a href="javascript:;" title="新品">新品</a>
+							<a href="javascript:;" title="人气">人气</a>
+							<a href="javascript:;" title="价格">价格</a>
+						</div>
+						<div class="con_r_head_r">
+							<div class="claerfix page_box">
+								<a href="javascript:;" class="prev_page"></a>
+								<span class="current">1</span>
+								<a href="javascript" class="page_num">2</a>
+								<a href="javascript" class="page_num">3</a>
+								<a href="javascript" class="page_num">4</a>
+								<a href="javascript" class="page_num">5</a>
+								<a href="javascript:;" class="next_page"></a>
+							</div>
+						</div>
+						<div class="con_r_head_m">
+							<span>104</span>个结果
+						</div>
+					</div>
+					<div class="con_subject">
+						<ul class="con_sub_ul">
+							<li>
+								<a href="#" class="product_img">
+									<img src="../image/listPage/20180319/pic1.jpg" alt="">
+								</a>
+									<p class="global"></p>
+									<a href="#" class="pro_name">Thom Browne 汤姆•布郎</a>
+									<a href="#" class="title_con" title="棉质 男士 卫衣">棉质 男士 卫衣</a>
+									<em>￥4680.00</em>
+							</li>
+							<li>
+								<a href="#" class="product_img">
+									<img src="../image/listPage/20180319/pic2.jpg" alt="">
+								</a>
+								<p class="global"></p>
+								<a href="#" class="pro_name">Red Valentino 红·华伦天奴</a>
+								<a href="#" class="title_con">丝绸 女士 荷叶领连衣裙</a>
+								<em>￥3400.00</em>
+							</li>
+							<li><a href="#" class="product_img">
+									<img src="../image/listPage/20180319/pic3.jpg" alt="">
+									</a>
+									<p class="global"></p>
+									<a href="#" class="pro_name">Red Valentino 红·华伦天奴</a>
+									<a href="#" class="title_con">涤纶 女士 荷叶边饰百褶连衣裙</a>
+									<em>￥4640.00</em>
+							</li>
+							<li>
+								<a href="#" class="product_img">
+									<img src="../image/listPage/20180319/pic4.jpg" alt="">
+								</a>
+								<p class="global"></p>
+								<a href="#" class="pro_name">Red Valentino 红·华伦天奴
+
+
+								<a href="#" class="title_con">混合材质 女士 流苏边饰直筒连衣裙</a>
+								<em>￥3090.00</a></em>
+							</li>
+							<li>
+								<a href="#" class="product_img">
+									<img src="../image/listPage/20180319/pic5.jpg" alt="">
+								</a>
+								<p class="global"></p>
+								<a href="#" class="pro_name">Red Valentino 红·华伦天奴</a>
+								<a href="#" class="title_con">丝绸混纺 女士 侧置条纹小礼服</a>
+								<em>￥2940.00</em>
+							</li>
+							<li>
+								<a href="#" class="product_img">
+									<img src="../image/listPage/20180319/pic6.jpg" alt="">
+								</a>
+								<p class="global"></p>
+								<a href="#" class="pro_name">Red Valentino 红·华伦天奴</a>
+								<a href="#" class="title_con">混合材质 女士 A字形荷叶边连衣裙</a>
+								<em>￥3090.00</em>
+							</li>
+							<li>
+								<a href="#" class="product_img">
+									<img src="../image/listPage/20180319/pic7.jpg" alt="">
+								</a>
+								<p class="global"></p>
+								<a href="#" class="pro_name">Red Valentino 红·华伦天奴</a>
+								<a href="#" class="title_con">棉质 女士 薄纱拼接T恤式连衣裙</a>
+								<em>￥1920.00</em>
+							</li>
+							<li><a href="#" class="product_img">
+									<img src="../image/listPage/20180319/pic8.jpg" alt="">
+								</a>
+								<p class="global"></p>
+								<a href="#" class="pro_name">Red Valentino 红·华伦天奴</a>
+								<a href="#" class="title_con">丝绸 女士 连衣裙</a>
+								<em>￥6160.00</em>
+							</li>
+							<li>
+								<a href="#" class="product_img">
+									<img src="../image/listPage/20180319/pic1.jpg" alt="">
+								</a>
+									<p class="global"></p>
+									<a href="#" class="pro_name">Thom Browne 汤姆•布郎</a>
+									<a href="#" class="title_con" title="棉质 男士 卫衣">棉质 男士 卫衣</a>
+									<em>￥4680.00</em>
+							</li>
+							<li>
+								<a href="#" class="product_img">
+									<img src="../image/listPage/20180319/pic2.jpg" alt="">
+								</a>
+								<p class="global"></p>
+								<a href="#" class="pro_name">Red Valentino 红·华伦天奴</a>
+								<a href="#" class="title_con">丝绸 女士 荷叶领连衣裙</a>
+								<em>￥3400.00</em>
+							</li>
+							<li><a href="#" class="product_img">
+									<img src="../image/listPage/20180319/pic3.jpg" alt="">
+									</a>
+									<p class="global"></p>
+									<a href="#" class="pro_name">Red Valentino 红·华伦天奴</a>
+									<a href="#" class="title_con">涤纶 女士 荷叶边饰百褶连衣裙</a>
+									<em>￥4640.00</em>
+							</li>
+							<li>
+								<a href="#" class="product_img">
+									<img src="../image/listPage/20180319/pic4.jpg" alt="">
+								</a>
+								<p class="global"></p>
+								<a href="#" class="pro_name">Red Valentino 红·华伦天奴
+
+
+								<a href="#" class="title_con">混合材质 女士 流苏边饰直筒连衣裙</a>
+								<em>￥3090.00</a></em>
+							</li>
+							<li>
+								<a href="#" class="product_img">
+									<img src="../image/listPage/20180319/pic5.jpg" alt="">
+								</a>
+								<p class="global"></p>
+								<a href="#" class="pro_name">Red Valentino 红·华伦天奴</a>
+								<a href="#" class="title_con">丝绸混纺 女士 侧置条纹小礼服</a>
+								<em>￥2940.00</em>
+							</li>
+							<li>
+								<a href="#" class="product_img">
+									<img src="../image/listPage/20180319/pic6.jpg" alt="">
+								</a>
+								<p class="global"></p>
+								<a href="#" class="pro_name">Red Valentino 红·华伦天奴</a>
+								<a href="#" class="title_con">混合材质 女士 A字形荷叶边连衣裙</a>
+								<em>￥3090.00</em>
+							</li>
+							<li>
+								<a href="#" class="product_img">
+									<img src="../image/listPage/20180319/pic7.jpg" alt="">
+								</a>
+								<p class="global"></p>
+								<a href="#" class="pro_name">Red Valentino 红·华伦天奴</a>
+								<a href="#" class="title_con">棉质 女士 薄纱拼接T恤式连衣裙</a>
+								<em>￥1920.00</em>
+							</li>
+							<li><a href="#" class="product_img">
+									<img src="../image/listPage/20180319/pic8.jpg" alt="">
+								</a>
+								<p class="global"></p>
+								<a href="#" class="pro_name">Red Valentino 红·华伦天奴</a>
+								<a href="#" class="title_con">丝绸 女士 连衣裙</a>
+								<em>￥6160.00</em>
+							</li>
+							<li>
+								<a href="#" class="product_img">
+									<img src="../image/listPage/20180319/pic1.jpg" alt="">
+								</a>
+									<p class="global"></p>
+									<a href="#" class="pro_name">Thom Browne 汤姆•布郎</a>
+									<a href="#" class="title_con" title="棉质 男士 卫衣">棉质 男士 卫衣</a>
+									<em>￥4680.00</em>
+							</li>
+							<li>
+								<a href="#" class="product_img">
+									<img src="../image/listPage/20180319/pic2.jpg" alt="">
+								</a>
+								<p class="global"></p>
+								<a href="#" class="pro_name">Red Valentino 红·华伦天奴</a>
+								<a href="#" class="title_con">丝绸 女士 荷叶领连衣裙</a>
+								<em>￥3400.00</em>
+							</li>
+							<li><a href="#" class="product_img">
+									<img src="../image/listPage/20180319/pic3.jpg" alt="">
+									</a>
+									<p class="global"></p>
+									<a href="#" class="pro_name">Red Valentino 红·华伦天奴</a>
+									<a href="#" class="title_con">涤纶 女士 荷叶边饰百褶连衣裙</a>
+									<em>￥4640.00</em>
+							</li>
+							<li>
+								<a href="#" class="product_img">
+									<img src="../image/listPage/20180319/pic4.jpg" alt="">
+								</a>
+								<p class="global"></p>
+								<a href="#" class="pro_name">Red Valentino 红·华伦天奴
+
+
+								<a href="#" class="title_con">混合材质 女士 流苏边饰直筒连衣裙</a>
+								<em>￥3090.00</a></em>
+							</li>
+							<li>
+								<a href="#" class="product_img">
+									<img src="../image/listPage/20180319/pic5.jpg" alt="">
+								</a>
+								<p class="global"></p>
+								<a href="#" class="pro_name">Red Valentino 红·华伦天奴</a>
+								<a href="#" class="title_con">丝绸混纺 女士 侧置条纹小礼服</a>
+								<em>￥2940.00</em>
+							</li>
+							<li>
+								<a href="#" class="product_img">
+									<img src="../image/listPage/20180319/pic6.jpg" alt="">
+								</a>
+								<p class="global"></p>
+								<a href="#" class="pro_name">Red Valentino 红·华伦天奴</a>
+								<a href="#" class="title_con">混合材质 女士 A字形荷叶边连衣裙</a>
+								<em>￥3090.00</em>
+							</li>
+							<li>
+								<a href="#" class="product_img">
+									<img src="../image/listPage/20180319/pic7.jpg" alt="">
+								</a>
+								<p class="global"></p>
+								<a href="#" class="pro_name">Red Valentino 红·华伦天奴</a>
+								<a href="#" class="title_con">棉质 女士 薄纱拼接T恤式连衣裙</a>
+								<em>￥1920.00</em>
+							</li>
+							<li><a href="#" class="product_img">
+									<img src="../image/listPage/20180319/pic8.jpg" alt="">
+								</a>
+								<p class="global"></p>
+								<a href="#" class="pro_name">Red Valentino 红·华伦天奴</a>
+								<a href="#" class="title_con">丝绸 女士 连衣裙</a>
+								<em>￥6160.00</em>
+							</li>
+							<li>
+								<a href="#" class="product_img">
+									<img src="../image/listPage/20180319/pic1.jpg" alt="">
+								</a>
+									<p class="global"></p>
+									<a href="#" class="pro_name">Thom Browne 汤姆•布郎</a>
+									<a href="#" class="title_con" title="棉质 男士 卫衣">棉质 男士 卫衣</a>
+									<em>￥4680.00</em>
+							</li>
+							<li>
+								<a href="#" class="product_img">
+									<img src="../image/listPage/20180319/pic2.jpg" alt="">
+								</a>
+								<p class="global"></p>
+								<a href="#" class="pro_name">Red Valentino 红·华伦天奴</a>
+								<a href="#" class="title_con">丝绸 女士 荷叶领连衣裙</a>
+								<em>￥3400.00</em>
+							</li>
+							<li><a href="#" class="product_img">
+									<img src="../image/listPage/20180319/pic3.jpg" alt="">
+									</a>
+									<p class="global"></p>
+									<a href="#" class="pro_name">Red Valentino 红·华伦天奴</a>
+									<a href="#" class="title_con">涤纶 女士 荷叶边饰百褶连衣裙</a>
+									<em>￥4640.00</em>
+							</li>
+							<li>
+								<a href="#" class="product_img">
+									<img src="../image/listPage/20180319/pic4.jpg" alt="">
+								</a>
+								<p class="global"></p>
+								<a href="#" class="pro_name">Red Valentino 红·华伦天奴
+
+
+								<a href="#" class="title_con">混合材质 女士 流苏边饰直筒连衣裙</a>
+								<em>￥3090.00</a></em>
+							</li>
+							<li>
+								<a href="#" class="product_img">
+									<img src="../image/listPage/20180319/pic5.jpg" alt="">
+								</a>
+								<p class="global"></p>
+								<a href="#" class="pro_name">Red Valentino 红·华伦天奴</a>
+								<a href="#" class="title_con">丝绸混纺 女士 侧置条纹小礼服</a>
+								<em>￥2940.00</em>
+							</li>
+							<li>
+								<a href="#" class="product_img">
+									<img src="../image/listPage/20180319/pic6.jpg" alt="">
+								</a>
+								<p class="global"></p>
+								<a href="#" class="pro_name">Red Valentino 红·华伦天奴</a>
+								<a href="#" class="title_con">混合材质 女士 A字形荷叶边连衣裙</a>
+								<em>￥3090.00</em>
+							</li>
+							<li>
+								<a href="#" class="product_img">
+									<img src="../image/listPage/20180319/pic7.jpg" alt="">
+								</a>
+								<p class="global"></p>
+								<a href="#" class="pro_name">Red Valentino 红·华伦天奴</a>
+								<a href="#" class="title_con">棉质 女士 薄纱拼接T恤式连衣裙</a>
+								<em>￥1920.00</em>
+							</li>
+							<li><a href="#" class="product_img">
+									<img src="../image/listPage/20180319/pic8.jpg" alt="">
+								</a>
+								<p class="global"></p>
+								<a href="#" class="pro_name">Red Valentino 红·华伦天奴</a>
+								<a href="#" class="title_con">丝绸 女士 连衣裙</a>
+								<em>￥6160.00</em>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- consultant在线咨询 -->
+	<div class="consultant">
+		<ul class="sultantList">
+			<li class="consult_app">
+				<a href="#" class="fix_meiciApp">
+					<em></em>
+				</a>
+				<div class="consult_app_m">
+					<div class="consult_app_sj"></div>
+					<div class="consult_app_code">
+						<img src="../image/listPage/ewm_indexTop_1.png" alt="">
+					</div>
+				</div>
+			</li>
+			<li class="consult_ol">
+				<a href="#" class="fix_onlineCon">
+				<em></em>
+				</a>
+			</li>
+			<li class="consult_qq">
+				<a href="#" class="fix_QQcon">
+					<em></em>
+				</a>
+			</li>
+			<li class="backTop">
+				<a href="#" class="fix_backTop">
+					<em></em>
+				</a>
+			</li>
+		</ul>
+	</div>
+<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="above_con_ves claerfix">
+				<div class="above_con1 above_con">
+					<ul>
+						<li class="ab_c_tit">购物指南</li>
+						<li><a href="#">购物流程</a></li>
+						<li><a href="#">配送方式</a></li>
+					</ul>
+					<ul>
+						<li class="ab_c_tit">支付方式</li>
+						<li><a href="#">如何付款</a></li>
+						<li><a href="#">发票制度</a></li>
+					</ul>
+					<ul>
+						<li class="ab_c_tit">商品说明</li>
+						<li><a href="#">商品尺码</a></li>
+						<li><a href="#">商品包装</a></li>
+					</ul>
+					<ul>
+						<li class="ab_c_tit">客服中心</li>
+						<li><a href="#">七天退换</a></li>
+						<li><a href="#">常见问题</a></li>
+					</ul>
+				</div>
+				<div class="above_con2 above_con">
+					<p>客服电话<br/><span>4000-250-630</span></p>
+					<p class="workHours">工作日 08:30-21:30</p>
+					<p class="workHours">节假日 10:00-18:00</p>
+				</div>
+				<div class="above_con3 above_con">
+					<p>订阅美西杂志</p>
+					<input type="text" class="subscibe">
+					<a href="#" class="sub_btn">即刻订阅</a>
+				</div>
+				<div class="above_con4 above_con">
+					<div class="meiciApp">
+						<p>美西APP</p>
+						<div class="meiciQR">
+							<img src="../image/down_app.png">
+						</div>
+					</div>
+					<div class="offWechat">
+						<p>官方微信</p>
+						<div class="wechatQR">
+							<img src="../image/wechat.png" >
+						</div>
+					</div>
+					<p class="scan">手机扫码即可下载美西APP或关注官方微信</p>
+				</div>
+			</div>
+			<div class="below_con">
+				<div class="below_con_top claerfix">
+					<ul class="claerfix">
+						<li>
+							<div class="footer_icon1"></div>
+							<span>100%正品保证</span>
+						</li>
+						<li class="f_second_li">
+							<div class="footer_icon2"></div>
+							<span>7天无忧退货</span>
+						</li>
+						<li>
+							<div class="footer_icon3"></div>
+							<span>九年专注，品质保障</span>
+						</li>
+					</ul>
+				</div>
+				<div class="below_con_bot claerfix">
+					<div class="float_l">
+						<ul class="claerfix">
+							<li><a href="#">媒体报道</a></li>
+							<li><a href="#">正品保证</a></li>
+							<li><a href="#">业务合作</a></li>
+							<li><a href="#">隐私声明</a></li>
+							<li><a href="#">加入美西</a></li>
+							<li class="last_li"><a href="#">联系我们</a></li>
+						</ul>
+						<p class="Copyright">Copyright ©2008-2018，美西-高端时尚生活电商</p>
+						<p>沪ICP备09001221号&nbsp;&nbsp;&nbsp;沪公网安备11010802017116号</p>
+					</div>
+					<div class="float_r">
+						<p>合作支持</p>
+						<ul>
+							<li class="partner_1"><a href="#"></a></li>
+							<li class="partner_2">
+								<a href="#">
+									<span></span>
+									<i>银联特约商户</i>
+								</a>
+							</li>
+							<li class="partner_3"><a href="#"></a></li>
+							<li class="partner_4"><a href="#"></a></li>
+							<li class="partner_5"><a href="#"></a></li>
+							<li class="partner_6"><a href="#"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script type="text/javascript" src="https://cdn.bootcss.com/require.js/2.3.5/require.min.js" data-main="../js/listPage.js"></script>
+
+</body>
+</html>

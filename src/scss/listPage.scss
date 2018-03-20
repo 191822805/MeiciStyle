@@ -1,0 +1,497 @@
+body{
+	background: #f5f5f5;
+}
+
+// 主体内容content
+.container{
+	width: 100%;
+	background: #f5f5f5;
+	.content{
+		width: 1200px;
+		margin: 0 auto;
+		.con_tit{
+			width: 1185px;
+			background: #fff;
+			line-height: 70px;
+			padding-left:15px;
+			margin-bottom: 10px;
+			font-size: 32px;
+		}
+		.sub_con_div{
+			width: 100%;
+			.con_left{
+				background: #f5f5f5;
+				width: 267px;
+				float: left;
+				margin-right: 10px;
+				.screen{
+					background: #fff;
+					padding: 0 10px;
+					margin-bottom: 10px;
+					.listTitle{
+						height: 52px;
+						font-size: 14px;
+						cursor:pointer;
+						.lTitle_text{
+							line-height:52px;
+						}
+						.lTitle_r{
+							float: right;
+							line-height:52px;
+							font-weight: bold;
+						}
+					}
+					.claList{
+						display: block;
+						border-top: 1px solid #e8e8e8;
+						padding: 10px 0;
+						.claListLi{
+							em{
+								display: inline-block;
+								vertical-align:middle;
+								width: 14px;
+								height: 14px;
+								margin-right: 5px;
+								background: url(../image/listPage/listico.gif) no-repeat;
+								}
+							.cLLi_tab{	
+								color: #666;
+								font-size: 12px;
+								padding: 5px 0;
+								&:hover{
+									color: #333;
+								}
+								em{
+	
+									background-position: left -14px;
+								}
+								.checked{
+									background-position: -14px -14px;
+								}
+							}
+							.creLife{
+								font-size: 14px;
+								display: none;
+								li{
+									a{
+										padding: 5px 0;
+										padding-left: 20px;
+										&:hover{
+											color: #333;
+										}
+										em{
+											margin-right: 10px;
+											background-position: left top;
+										}
+										.checked{
+											background-position: -14px top;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				.sex{
+					.claList{
+						display: none;
+						padding: 10px 0;
+						border-top: 1px solid #e8e8e8;
+						em{
+							display: inline-block;
+							vertical-align:middle;
+							width: 14px;
+							height: 14px;
+							margin-right: 5px;
+							background: url(../image/listPage/listico.gif) no-repeat;
+						}
+						li{
+							a{
+								color: #666;
+								font-size: 12px;
+								padding: 5px 0;
+								&:hover{
+									color: #333;
+								}
+								em{
+									margin-right: 10px;
+									background-position: left top;
+								}
+								.checked{
+									background-position: -14px top;
+								}
+							}
+						}
+					}
+				}
+				.brand{
+					.brand_box{
+						display: none;
+						height: 250px;
+						padding-left:5px;
+						padding: 10px 0;
+						border-top: 1px solid #e8e8e8;
+						.brand_box_con{
+							overflow: auto;
+							.brand_con_ul{
+								em{
+								display: inline-block;
+								vertical-align:middle;
+								width: 14px;
+								height: 14px;
+								margin-right: 5px;
+								background: url(../image/listPage/listico.gif) no-repeat;
+								}
+								li{
+									a{
+										width: 212px;
+									 	overflow: hidden;
+									    white-space: nowrap;
+									    text-overflow: ellipsis;
+										color: #666;
+										font-size: 12px;
+										padding: 5px 0;
+										&:hover{
+											color: #333;
+									}
+									em{
+										margin-right: 10px;
+										background-position: left top;
+										}
+									.checked{
+										background-position: -14px top;
+										}
+
+									}
+
+								}
+							}
+						}
+					}
+					
+				}
+				.price{
+					.claList{
+						display: none;
+						.price_range{
+							.price_choose{
+								padding:15px 0 10px 0;
+								.minPrice{
+									width: 107px;
+									height: 30px;
+									border: solid 1px #ddd;
+									padding-left: 3px;
+									margin-right: 3px;
+								}
+								.maxPrice{
+									width: 107px;
+									height: 30px;
+									border: solid 1px #ddd;
+									padding-left: 3px;
+									margin-left: 3px;
+								}
+							}
+							.affirm{
+								display: block;
+								width: 100%;
+								line-height: 32px;
+								text-align: center;
+								border-color:#333;
+								background: #333;
+								color: #fff;
+							}
+						}
+					}
+				}
+				.color{
+					.claList{
+						display: none;
+						.color_list{
+							em,span{
+								display: inline-block;
+								vertical-align:middle;
+								margin-right: 5px;
+							}
+							em{
+								width: 14px;
+								height: 14px;
+								background: url(../image/listPage/listico.gif) no-repeat;
+								}
+							span{
+								width: 22px;
+								height: 22px;
+								background:url(../image/listPage/color.gif) no-repeat;
+								}
+							li{
+								width: 50%;
+								float: left;
+								a{
+									color: #666;
+									font-size: 12px;
+									padding: 5px 0;
+									&:hover{
+										color: #333;
+									}
+									em{
+										margin-right: 10px;
+										background-position: left top;
+									}
+
+								}
+							}
+						}
+					}
+				}		
+						
+			}
+			.con_right{
+				float: right;
+				width: 923px;
+				background: #f5f5f5;
+				.choosed_box{
+					display: none;
+				    background: #fff;
+					padding: 22px 0 10px 0;
+					margin-bottom: 5px;
+					position: relative;
+					p{
+						float: left;
+						padding: 2px 0 0 25px;
+						cursor:pointer;
+					}
+					.choosed_show{
+						float: left;
+						width: 815px;
+					}
+				}
+				.con_r_header{
+					height: 55px;
+					line-height: 55px;
+					background: #fff;
+					margin-bottom: 5px;
+					.con_r_head_l{
+						float: left;
+						margin-left: 25px;
+						span{
+							float: left;
+							line-height: 55px;
+							color: #333;
+							font-weight: bold;
+							font-size:12px;
+						}
+						a{
+							font-size:12px;
+							float: left;
+							line-height: 55px;
+							margin:0 12px 0 35px;
+
+						}	
+					}
+					.con_r_head_r{
+						float: right;
+						.page_box{
+							margin-top: 19px;
+							a,span{
+								float: left;
+								width: 20px;
+								line-height: 20px;
+								text-align: center;
+								font-size: 12px;
+								color: #666;
+								margin-right: 20px;
+							}
+							.current{
+								background: #333;
+								color: #fff;
+								border-radius:3px;
+							}
+						}
+					}
+					.con_r_head_m{
+						float: right;
+						font-size: 12px;
+						margin: 2px 25px 0 0;
+    					color: #b3b3b3;
+					}
+					
+				}
+				.con_subject{
+					width: 100%;
+					background: #f5f5f5;
+					.con_sub_ul{
+						width: 100%;
+						display: flex;
+						justify-content:space-between;
+						flex-wrap:wrap;
+						li{
+							background: #fff;
+							float: left;
+							margin-bottom: 5px;
+							padding: 15px 13px 20px;
+							.global{
+								width: 48px;
+								height: 23px;
+								margin-top: 10px;
+								margin-left:10px;
+								background: url(../image/listPage/saleTip1.png) no-repeat -1px -4px;
+							}
+							.pro_name{
+								color: #333;
+								font-size: 12px;
+								line-height: 30px;
+								font-weight: bold;
+								margin-left:10px;
+							}
+							.title_con{
+								color: #666;
+								font-size: 12px;
+								margin-left:10px;
+							}
+							em{
+								display: block;
+								text-align: left;
+								color: #999;
+								font-size: 12px;
+								margin-left:10px;
+								line-height: 32px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+._mCS_1 .mCSB_scrollTools .mCSB_dragger{
+	height: 26px;
+}
+._mCS_1 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+    width: 4px;
+	height:26px;
+	background-color: #626262;
+}
+// 固定咨询栏
+.consultant{
+	position: fixed;
+	right: 0;
+	bottom: 100px;
+	border: solid 1px #ddd;
+    background: #fff;
+    z-index: 10;
+    .sultantList{
+    	li{
+    		position: relative;
+    		a{
+    			width: 58px;
+			    height: 46px;
+			    padding-top: 12px;
+			    border-bottom: solid 1px #ddd;
+    		}
+    		em{
+    				width: 35px;
+    				height: 35px;
+    				background: url(../image/listPage/consult.png) no-repeat;
+    				margin: 0 auto;
+    			}
+    		.consult_app_m{
+    			display: none;
+    			position: absolute;
+    			top: -17px;
+			    left: -107px;
+			    padding-right: 10px;
+			    z-index: 2;
+			    .consult_app_sj{
+			    	width: 8px;
+				    height: 17px;
+				    background: url(../image/headico.png) -97px -3px no-repeat;
+				    position: absolute;
+				    z-index: 2;
+				    top: 38px;
+				    right: 3px;
+			    }
+			    .consult_app_code{
+			    	padding: 10px;
+				    background: #fff;
+				    border: solid 1px #ececec;
+				    font-size: 0;
+			    }
+    		}
+    	
+    		
+    		.fix_onlineCon{
+    			em{
+    				background-position: left -35px;
+    			}
+    		}
+    		.fix_QQcon{
+    			em{
+    				background-position: left -70px;
+    			}
+    		}
+    		.fix_backTop{
+    			em{
+    				background-position: left -110px;
+    			}
+    		}
+    	}
+    	.consult_app{
+    		
+    		&:hover{
+				.consult_app_m{
+					display: block;
+				}
+    			.fix_meiciApp{
+    				background: #666;
+    			 	em{
+
+	    				background-position: -35px top;
+    			 	}
+    			}
+    		}
+    		.fix_meiciApp{
+    			em{
+    				background-position: left top;
+    			}
+    		}
+    	}
+    	.consult_ol{
+    		&:hover{
+    			.fix_onlineCon{
+    				background: #666;
+    			 	em{
+
+	    				background-position: -35px -35px;
+    			 	}
+    			}
+    		}
+    	}
+    	.consult_qq{
+    		&:hover{
+    			.fix_QQcon{
+    				background: #666;
+    			 	em{
+
+	    				background-position: -35px -70px;
+    			 	}
+    			}
+    		}
+    	}
+    	.backTop{
+    		&:hover{
+    			.fix_backTop{
+    				background: #666;
+    			 	em{
+
+	    				background-position: -35px -110px;
+    			 	}
+    			}
+    		}
+    	}
+    }
+}
+// 底部footer
+.footer{
+	.container{
+		background: #fff;
+	}
+}
