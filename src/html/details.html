@@ -5,6 +5,7 @@
 	<title>详情页</title>
 	<link rel="stylesheet" type="text/css" href="../css/common.css">
 	<link rel="stylesheet" type="text/css" href="../css/header.css">
+	<link rel="stylesheet" type="text/css" href="../css/details.css">
 	<link rel="stylesheet" type="text/css" href="../css/footer.css">
 </head>
 <body>
@@ -251,8 +252,13 @@
 			<div class="con_top claerfix">
 				<div class="magnifyLens claerfix">
 					<div class="small-box">
-						<img src="../image/details/mag-pic1.jpg" class="active">
-						<img src="../image/details/mag-pic2.jpg">
+						<div class="prev-b dire-btn"></div>
+						<div class="next-b dire-btn"></div>
+						<ul class="small-box-car">
+							<li class="active fir_li"><img src="../image/details/mag-pic1.jpg" ></li>
+							<li><img src="../image/details/mag-pic2.jpg"></li>
+						</ul>
+						
 					</div>
 					<div class ="middle-box">
 						<img src="../image/details/mag-pic1.jpg" class="middle-img">
@@ -265,37 +271,408 @@
 					
 				</div>
 				<div class="con_top_info">
-					<a href="#" class="pro_name"></a>
-					<div class="top_info_des"></div>
-					<div class="price"><span>￥</span></div>
-					<div class="color"><em>颜色</em><span></span></div>
-					<div class="size">
+					<a href="#" class="pro_name">Thom Browne 汤姆•布郎</a>
+					<div class="top_info_des">棉质 男士 卫衣<span></span></div>
+					<div class="price"><span>￥</span>4680.00</div>
+					<div class="color claerfix"><em>颜色</em><span></span></div>
+					<div class="size claerfix">
 						<em>尺码</em>
 						<ul class="choose_size">
-							<li></li>
-							<li></li>
+							<li class="choosed">
+								1
+								<span>对应中国尺码S</span>
+							</li>
+							<li>
+								2
+								<span>对应中国尺码M</span>
+							</li>
 						</ul>
+						<a href="#size">查看尺码说明</a>
 					</div>
+					<div class="pro_btn  claerfix">
+						<button class="btn_add_shopping float_l">
+							即刻购买
+						</button>
+						<button class="btn_buy_now float_l">
+							加入购物袋
+						</button>
+						<div class="pro_collect">
+							<a href="javascript:;" title="加入收藏"></a>
+						</div>
+						<div class="pro_share">
+							<a href="javascript:;"></a>
+							<div class="pro_share_m">
+								<div class="header_sj"></div>
+								<div class="pro_share_to">
+									<a href="javasript" title="分享到微信"></a>
+									<a href="javasript" title="分享到新浪微博"></a>
+									<a href="javasript" title="分享到QQ好友"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<ul class="hint_ul">
+						<li class="claerfix">
+							<span class="hint_ul_tit">到货时间</span>
+							<span class="hint_ul_con">该商品到货时间预计15-20个工作日,具体时间受海关放行效率影响。</span>
+						</li>
+						<li class="claerfix">
+							<span class="hint_ul_tit">退货说明</span>
+							<span class="hint_ul_con">若该商品无质量问题不支持退换货</span>
+						</li>
+					</ul>
 				</div>
 			</div>
-			<div class="con_rec"></div>
-			<div class="con_part">
-				<div class="pro_intro_menu"></div>
-				<div class="pro_pres">
-					<div class="pro_info"></div>
-					<div class="brand_story"></div>
-					<div class="pro_deta"></div>
+			<div class="pro_rec">
+				<div class="pro_rec_top  pro_info_top">
+					<div class="M_icon"></div>
+					<p class="spe_theme">Product Recommend<br/>
+						<span>相关推荐</span>
+					</p>
 				</div>
+				<div class="scroll_pro" id="scroll_pro">
+					<ul class="car_choose_list claerfix">
+						<li><a href="#" target="_black">
+								<img src="../image/details/20180320/pic1.jpg">
+								<div class="pro_recom_name">
+									<p>Burberry 博柏利</p>
+									<div class="pro_m">涤纶 男仕 棉外套</div>
+									<span class="pro_price">6910.00</span>
+								</div>
+							</a></li>
+						<li><a href="#" target="_black">
+								<img src="../image/details/20180320/pic2.jpg" alt="">
+								<div class="pro_recom_name">
+									<p>Bottega Veneta 葆蝶家</p>
+									<div class="pro_m">麂皮 男士 低筒靴</div>
+									<span class="pro_price">7479.00</span>
+								</div>
+							</a></li>
+						<li><a href="#" target="_black" >
+								<img src="../image/details/20180320/pic3.jpg" alt="">
+								<div class="pro_recom_name">
+									<p>Givenchy 纪梵希</p>
+									<div class="pro_m">小牛皮+氨纶 男士 低帮运动鞋</div>
+									<span class="pro_price">3250.00</span>
+								</div>
+							</a></li>
+						<li><a href="#" target="_black" >
+								<img src="../image/details/20180320/pic4.jpg" alt="">
+								<div class="pro_recom_name">
+									<p>Calvin Klein 卡尔文·克莱恩</p>
+									<div class="pro_m">棉 男士 短袖T恤</div>
+									<span class="pro_price">1730.00</span>
+								</div>
+							</a></li>
+						<li><a href="#" target="_black" >
+								<img src="../image/details/20180320/pic5.jpg" alt="">
+								<div class="pro_recom_name">
+									<p>Balenciaga 巴黎世家</p>
+									<div class="pro_m">混合材质 男士 Piscine凉鞋</div>
+									<span class="pro_price">3700.00</span>
+								</div>
+							</a></li>
+						<li><a href="#" target="_black">
+								<img src="../image/details/20180320/pic6.jpg" alt="">
+								<div class="pro_recom_name">
+									<p>Burberry 博柏利</p>
+									<div class="pro_m">深蓝色男士牛仔裤</div>
+									<span class="pro_price">1800.00</span>
+								</div>
+							</a></li>
+						<li><a href="#" target="_black">
+								<img src="../image/details/20180320/pic7.jpg" alt="">
+								<div class="pro_recom_name">
+									<p>Balenciaga 巴黎世家</p>
+									<div class="pro_m">【预售】巴黎世家新款logo卫衣</div>
+									<span class="pro_price">5880.00</span>
+								</div>
+							</a></li>
+						<li><a href="#" target="_black">
+								<img src="../image/details/20180320/pic8.jpg" alt="">
+								<div class="pro_recom_name">
+									<p>Love Moschino 莫斯奇诺</p>
+									<div class="pro_m">棉质 男士 卫衣</div>
+									<span class="pro_price">1050.00</span>
+								</div>
+							</a></li>
+						<li><a href="#" target="_black">
+								<img src="../image/details/20180320/pic9.jpg" alt="">
+								<div class="pro_recom_name">
+									<p>Tod's 托德斯</p>
+									<div class="pro_m">小山羊皮 男士 低筒靴/裸靴</div>
+									<span class="pro_price">6910.00</span>
+								</div>
+							</a></li>
+						<li><a href="#" target="_black">
+								<img src="../image/details/20180320/pic10.jpg" alt="">
+								<div class="pro_recom_name">
+									<p>Bottega Veneta 葆蝶家</p>
+									<div class="pro_m">小山羊皮 男士 低筒靴/裸靴</div>
+									<span class="pro_price">6910.00</span>
+								</div>
+							</a></li>
+						<li><a href="#" target="_black">
+								<img src="../image/details/20180320/pic11.jpg" alt="">
+								<div class="pro_recom_name">
+									<p>Bottega Veneta 葆蝶家</p>
+									<div class="pro_m">小山羊皮 男士 低筒靴/裸靴</div>
+									<span class="pro_price">6910.00</span>
+								</div>
+							</a></li>
+						<li><a href="#" target="_black">
+								<img src="../image/details/20180320/pic12.jpg" alt="">
+								<div class="pro_recom_name">
+									<p>Burberry 博柏利</p>
+									<div class="pro_m">涤纶 男仕 棉外套</div>
+									<span class="pro_price">6910.00</span>
+								</div>
+							</a></li>
+					</ul>
+					<div class="prev_btn dire_btn"></div>
+					<div class="next_btn dire_btn"></div>
+				</div>
+			</div>
+			
+			
+			<div class="intro_menu">
+				<div class="intro_menu_m">
+					<ul class="ment_list">
+						<li class="current">商品详情</li>
+						<li>商品尺寸</li>
+						<li>配送及售后</li>
+						<div class="pro_btn_r  claerfix">
+							<button class="btn_add_shopping float_l">
+								即刻购买
+							</button>
+							<button class="btn_buy_now float_l">
+								加入购物袋
+							</button>
+						</div>
+					</ul>
+				</div>
+			</div>
+			<div class="con_part">
+				<div class="pro_pres">
+					<div class="pro_info">
+						<div class="pro_rec_top  pro_info_top">
+							<div class="M_icon"></div>
+							<p class="spe_theme">Product Information<br/>
+								<span>商品信息</span>
+							</p>
+						</div>
+						<div class="pro_rec_con">
+							<table class="proTable">
+								<colgroup>
+                            	<col width="70px"><col width="195px"><col width="70px"><col width="195px"><col width="70px"><col width="195px"><col width="70px"><col width="195px">
+                       			</colgroup>
+								<tbody>
+									<tr>
+										<th>美西编号</th>
+										<td>353858</td>
+										<th>货号</th>
+										<td>301005</td>
+										<th>产地</th>
+										<td>日本</td>
+										<th>年份</th>
+										<td>2018</td>
+									</tr>
+									<tr>
+										<th>适用人群</th>
+										<td>男士</td>
+										<th>颜色</th>
+										<td>蓝色</td>
+										<th>季节</th>
+										<td>-</td>
+										<th>系别</th>
+										<td>-</td>
+									</tr>
+									<tr>
+										<th>材质</th>
+										<td colspan="7">99%棉质</td>
+									</tr>
+									<tr>
+										<th>商品描述</th>
+										<td colspan="7" style="border: none;">Thom Browne 全棉 海军蓝色4条纹拉链连帽衫。</td>
+										
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="brand_story">
+						<div class="pro_rec_top  pro_info_top">
+							<div class="M_icon"></div>
+							<p class="spe_theme">Brand Story<br/>
+								<span>品牌故事</span>
+							</p>
+						</div>
+						<div class="brand_story_con">
+							<div class="proBrand_l">
+								<p>汤姆·布郎 (Thom Browne) 这个邪魅酷感、体现美国大佬风格的新锐品牌在2001年**举办时装发布,男士西装在剪裁与合体度上独树一帜，让人觉得时髦、新鲜又有趣。汤姆·布郎 (Thom Browne) 品牌西装以炭灰色著称时尚,坚信时尚和风格来源于穿着者的内在，应该是非常自然的，而外形好似好莱坞大明星的汤姆·布郎 (Thom Browne) 本人，正是自己男装的**代言人。汤姆·布郎(Thom Browne) 男装以精细的做工、考究的剪裁和出位的剪裁设计，挑战古板的传统男装，让每天要穿正装的商务男士有了一个更自然、放松，更时髦、个性的新选择。</p>
+							</div>
+							<div class="long_str"></div>
+							<div class="proBrand_r">
+								<img src="../image/details/360.jpg">
+								<a href="#"></a>
+							</div>
+						</div>
+					</div>
+					<div class="pro_deta">
+						<div class="pro_rec_top  pro_info_top">
+							<div class="M_icon"></div>
+							<p class="spe_theme">Product Details<br/>
+								<span>商品详情</span>
+							</p>
+						</div>
+						<div class="pro_deta_img">
+							<ul class="claerfix">
+								<li><img src="../image/details/mag-pic1.jpg" width="485"></li>
+								<li><img src="../image/details/mag-pic2.jpg" width="485"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+					
 				<div class="pro_size">
-					<div class="pro_size_con"></div>
+					<div class="pro_size_top  pro_info_top">
+						<div class="M_icon">
+							<p class="spe_theme">Product Size<br/>
+								<span>商品尺寸</span>
+							</p>
+						</div>
+						<div class="pro_z_r">
+							<span>(单位：CM)</span>
+							<a href="#">尺码说明</a>
+						</div>
+					</div>
+					<div class="pro_size_con">
+						
+					</div>
 				</div>
 				<div class="after_sale">
 					<div class="distribution"></div>
 					<div class="after_service"></div>
-				</div>
+			 	</div>
 			</div>
+				
 		</div>
 	</div>
+
+<!-- 猜你喜欢 -->
+	<div class="guess_you_like">
+		<div class="pro_rec">
+					<div class="pro_rec_top  pro_info_top">
+						<div class="M_icon"></div>
+						<p class="spe_theme">Guess Your Like<br/>
+							<span>猜你喜欢</span>
+						</p>
+					</div>
+					<div class="scroll_pro" id="scroll_pro">
+						<ul class="car_choose_list claerfix">
+							<li><a href="#" target="_black">
+									<img src="../image/details/20180320/pic1.jpg">
+									<div class="pro_recom_name">
+										<p>Burberry 博柏利</p>
+										<div class="pro_m">涤纶 男仕 棉外套</div>
+										<span class="pro_price">6910.00</span>
+									</div>
+								</a></li>
+							<li><a href="#" target="_black">
+									<img src="../image/details/20180320/pic2.jpg" alt="">
+									<div class="pro_recom_name">
+										<p>Bottega Veneta 葆蝶家</p>
+										<div class="pro_m">麂皮 男士 低筒靴</div>
+										<span class="pro_price">7479.00</span>
+									</div>
+								</a></li>
+							<li><a href="#" target="_black" >
+									<img src="../image/details/20180320/pic3.jpg" alt="">
+									<div class="pro_recom_name">
+										<p>Givenchy 纪梵希</p>
+										<div class="pro_m">小牛皮+氨纶 男士 低帮运动鞋</div>
+										<span class="pro_price">3250.00</span>
+									</div>
+								</a></li>
+							<li><a href="#" target="_black" >
+									<img src="../image/details/20180320/pic4.jpg" alt="">
+									<div class="pro_recom_name">
+										<p>Calvin Klein 卡尔文·克莱恩</p>
+										<div class="pro_m">棉 男士 短袖T恤</div>
+										<span class="pro_price">1730.00</span>
+									</div>
+								</a></li>
+							<li><a href="#" target="_black" >
+									<img src="../image/details/20180320/pic5.jpg" alt="">
+									<div class="pro_recom_name">
+										<p>Balenciaga 巴黎世家</p>
+										<div class="pro_m">混合材质 男士 Piscine凉鞋</div>
+										<span class="pro_price">3700.00</span>
+									</div>
+								</a></li>
+							<li><a href="#" target="_black">
+									<img src="../image/details/20180320/pic6.jpg" alt="">
+									<div class="pro_recom_name">
+										<p>Burberry 博柏利</p>
+										<div class="pro_m">深蓝色男士牛仔裤</div>
+										<span class="pro_price">1800.00</span>
+									</div>
+								</a></li>
+							<li><a href="#" target="_black">
+									<img src="../image/details/20180320/pic7.jpg" alt="">
+									<div class="pro_recom_name">
+										<p>Balenciaga 巴黎世家</p>
+										<div class="pro_m">【预售】巴黎世家新款logo卫衣</div>
+										<span class="pro_price">5880.00</span>
+									</div>
+								</a></li>
+							<li><a href="#" target="_black">
+									<img src="../image/details/20180320/pic8.jpg" alt="">
+									<div class="pro_recom_name">
+										<p>Love Moschino 莫斯奇诺</p>
+										<div class="pro_m">棉质 男士 卫衣</div>
+										<span class="pro_price">1050.00</span>
+									</div>
+								</a></li>
+							<li><a href="#" target="_black">
+									<img src="../image/details/20180320/pic9.jpg" alt="">
+									<div class="pro_recom_name">
+										<p>Tod's 托德斯</p>
+										<div class="pro_m">小山羊皮 男士 低筒靴/裸靴</div>
+										<span class="pro_price">6910.00</span>
+									</div>
+								</a></li>
+							<li><a href="#" target="_black">
+									<img src="../image/details/20180320/pic10.jpg" alt="">
+									<div class="pro_recom_name">
+										<p>Bottega Veneta 葆蝶家</p>
+										<div class="pro_m">小山羊皮 男士 低筒靴/裸靴</div>
+										<span class="pro_price">6910.00</span>
+									</div>
+								</a></li>
+							<li><a href="#" target="_black">
+									<img src="../image/details/20180320/pic11.jpg" alt="">
+									<div class="pro_recom_name">
+										<p>Bottega Veneta 葆蝶家</p>
+										<div class="pro_m">小山羊皮 男士 低筒靴/裸靴</div>
+										<span class="pro_price">6910.00</span>
+									</div>
+								</a></li>
+							<li><a href="#" target="_black">
+									<img src="../image/details/20180320/pic12.jpg" alt="">
+									<div class="pro_recom_name">
+										<p>Burberry 博柏利</p>
+										<div class="pro_m">涤纶 男仕 棉外套</div>
+										<span class="pro_price">6910.00</span>
+									</div>
+								</a></li>
+						</ul>
+						<div class="prev_btn dire_btn"></div>
+						<div class="next_btn dire_btn"></div>
+					</div>
+		</div>
+	</div>
+
 <!-- footer -->
 	<div class="footer">
 		<div class="container">

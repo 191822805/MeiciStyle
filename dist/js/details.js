@@ -1,1 +1,1 @@
-"use strict";
+"use strict";require.config({paths:{jquery:"../js/jquery"}}),require.config({paths:{index:"../js/index"}}),require(["jquery","index"],function(){});

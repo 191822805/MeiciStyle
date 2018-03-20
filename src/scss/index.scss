@@ -124,31 +124,31 @@
 		.car_choose_list{
 			position: absolute;
 			width: 6000px;
-				li{
-					float: left;
+			li{
+				float: left;
+				width: 160px;
+				height: 260px;
+				padding:5px 20px 0;
+				a{
 					width: 160px;
 					height: 260px;
-					padding:5px 20px 0;
-					a{
+					text-align: center;
+					img{
 						width: 160px;
-						height: 260px;
-						text-align: center;
-						img{
-							width: 160px;
-							height: 192px;
-							}
-						div{
-							width: 100%;
-							color: #999;
-							font-size: 12px;
-							text-align:center;
-							margin-top: 10px;
+						height: 192px;
 						}
+					div{
+						width: 100%;
+						color: #999;
+						font-size: 12px;
+						text-align:center;
+						margin-top: 10px;
 					}
 				}
 			}
 		}
 	}
+}
 
 
 
