@@ -84,8 +84,6 @@ class CarouselB{
 		this.el = el;
 		this.timeout = timeout;
 		
- 		
-		
 		let carChoList = this.el.getElementsByClassName('car_choose_list')[0];
 		let liFirst = carChoList.children[0];
 		let liSecond = carChoList.children[1];
@@ -96,7 +94,7 @@ class CarouselB{
 
 		//一个li的宽度 
 		this.liWidth = liFirst.offsetWidth;
-		//复制前六个li添加至ul里面
+		// //复制前六个li添加至ul里面
 		carChoList.innerHTML += liFirst.outerHTML;
 		carChoList.innerHTML += liSecond.outerHTML;
 		carChoList.innerHTML += liThird.outerHTML;
@@ -145,8 +143,70 @@ class CarouselB{
 	rightMove(){
 		this.index ++;
 			if (this.index >= this.liLength - 6 ) {
-				this.carChoList.style.left = - (6*this.liWidth) +'px';
-				this.index =  7; 
+				this.carChoList.style.left = - (5*this.liWidth) +'px';
+				this.index =  5; 
+			}
+			bufferMove(this.carChoList,{left:-this.index *this.liWidth});
+	}
+}
+
+class CarouselC{
+	constructor({el,timeout = 4000}){
+		this.el = el;
+		this.timeout = timeout;
+		
+ 		
+		
+		let carChoList = this.el.getElementsByClassName('car_choose_list')[0];
+		let liFirst = carChoList.children[0];
+		let liSecond = carChoList.children[1];
+		let liThird = carChoList.children[2];
+		let liFourth = carChoList.children[3];
+
+		//一个li的宽度 
+		this.liWidth = liFirst.offsetWidth;
+		//复制前六个li添加至ul里面
+		carChoList.innerHTML += liFirst.outerHTML;
+		carChoList.innerHTML += liSecond.outerHTML;
+		carChoList.innerHTML += liThird.outerHTML;
+		carChoList.innerHTML += liFourth.outerHTML;
+		//添加六个个li之后list中li的个数
+		this.liLength = carChoList.children.length;
+		//设置添加一个li之后ul的宽度
+		carChoList.style.width = this.liWidth * this.liLength+'px';
+		
+		
+		this.carChoList = carChoList;
+		//设置图片下标
+		this.index = 0;
+
+		let prevBtn = this.el.getElementsByClassName('prev_btn')[0];
+		//给左边按钮添加点击事件
+		prevBtn.onclick =()=>{
+			this.leftMove();
+		};
+		let nextBtn = this.el.getElementsByClassName('next_btn')[0];
+		//给右边按钮添加点击事件
+		nextBtn.onclick =()=>{
+			this.rightMove();
+		};
+
+	}
+	
+	leftMove(){
+		this.index --;
+			if (this.index < 0) {
+				this.carChoList.style.left = -(this.liLength -4)*this.liWidth +'px';
+				this.index = this.liLength -6; 
+			}
+			bufferMove(this.carChoList,{left:-this.index *this.liWidth});
+	
+	}
+	rightMove(){
+		this.index ++;
+			if (this.index >= this.liLength - 4 ) {
+				this.carChoList.style.left = - (4*this.liWidth) +'px';
+				this.index =  5; 
 			}
 			bufferMove(this.carChoList,{left:-this.index *this.liWidth});
 	}

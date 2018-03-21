@@ -2,15 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="Description" content="中国奢侈品时尚网购平台【美西时尚】提供国际一线奢侈品品牌包包,服装,配件,鞋履等系列产品,100%正品保障,限量特卖4折起,7天无理由退换货,订购热线：4000-250-630 轻松享受奢华！">
-	<title>美西—发现全球独立设计，全球奢侈品购物网站,奢侈品网购，正品折扣,尽在MEICI.COM</title>
+	<title>购物车</title>
 	<link rel="stylesheet" type="text/css" href="../css/common.css">
 	<link rel="stylesheet" type="text/css" href="../css/header.css">
-	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<link rel="stylesheet" type="text/css" href="../css/shoppingCart.css">
 	<link rel="stylesheet" type="text/css" href="../css/footer.css">
 </head>
 <body>
-
 <!-- header -->
 	<div class="header">
 		<div class="header_c">
@@ -36,25 +34,11 @@
 					</div>
 					<div class="headerbar_right claerfix">
 						<div class="headerUser">
-							<a href="logIn.html" title="登录">登录</a>
+							<a href="#" title="登录">登录</a>
 							<a href="register.html" title="注册">注册</a>
 						</div>
 						<div class="headerCart">
-							<a href="javascript:;"  title="购物袋" class="shopCart"><em class="hico3"></em>购物袋（<span>0</span>）</a>
-							<div class="headerCart_m">
-								<div class="header_sj" style="margin-left:135px;"></div>
-								<div class="headerCart_m_info">
-                   					 <div class="headerCart_m_info_show" style="display: none;">
-                        				<div class="headerCtit">我的商品</div>
-                       				 	<div class="headerCpro"></div>
-                        			<div class="headerCopt clearfix">
-                           				<div class="headerCprice float_l">商品合计：<span style="color:#e8203b; font-size:12px;">￥</span><span class="c_purple headerCart_total_price"></span></div>
-                            			<a class="headerCbuy float_r" href="/member/cart/index">去结算</a>
-				                        </div>
-				                    </div>
-				                    <div class="headerCproN">您的购物袋是空的</div>
-				                </div>
-							</div>
+							<a href="#"  title="购物袋"><em class="hico3"></em>购物袋（<span>0</span>）</a>
 						</div>
 					</div>
 				</div>
@@ -70,18 +54,18 @@
 					</div>
 			</div>
 			<!-- 导航栏 -->
-			<div class="header_nav">
-				<div class="header_nav_menu claerfix">
+			<div class="header_nav claerfix">
+				<div class="header_nav_menu">
 					<ul class="h_nav_list">
-						<li><a href="javascript:;" target="_black">首页</a></li>
-						<li><a href="listPage.html"  target="_black">新近单品</a></li>
-						<li><a href="javascript:;" target="_black">全球购</a></li>
-						<li><a href="javascript:;" target="_black">女士</a></li>
-						<li><a href="javascript:;" target="_black">男仕</a></li>
-						<li><a href="javascript:;" target="_black">家居生活</a></li>
-						<li><a href="javascript:;" target="_black">腕表</a></li>
-						<li><a href="javascript:;" target="_black">品牌</a></li>
-						<li><a href="javascript:;" target="_black">Mzine</a></li>
+						<li><a href="javascript:;">首页</a></li>
+						<li><a href="javascript:;">新近单品</a></li>
+						<li><a href="javascript:;">全球购</a></li>
+						<li><a href="javascript:;">女士</a></li>
+						<li><a href="javascript:;">男仕</a></li>
+						<li><a href="javascript:;">家居生活</a></li>
+						<li><a href="javascript:;">腕表</a></li>
+						<li><a href="javascript:;">品牌</a></li>
+						<li><a href="javascript:;">Mzine</a></li>
 					</ul>
 				</div>
 				<div class="h_nav_con">
@@ -261,292 +245,117 @@
 			</div>
 		</div>
 		<div class="header_shadow"></div>
-	</div>
+	</div>	
 <!-- content -->
-	<div class="container">
-		<div class="content">
-			<!-- banner -->
-			<div class="carousel claerfix" id="carousel">
-				<ul class="carList claerfix">
-					<li>
-						<a href="#" title="好人缘品牌 穿上就讨人喜欢">
-							<img src="../image/carousel/pic1.png">
-						</a>
-					</li>
-					<li>
-						<a href="#" title="香奈儿的灵感缪斯">
-							<img src="../image/carousel/pic2.png">
-						</a>
-					</li>
-					<li>
-						<a href="#" title="值得入手的易断货T恤">
-							<img src="../image/carousel/pic3.png">
-						</a>
-					</li>
-				</ul>
-				<div class="direction-btn">
-					<a href="javascript:;" class="prev"></a>
-					<a href="javascript:;" class="next"></a>
+<div class="container">
+	<div class="content">
+		<div class="content_m">
+			<!-- 有商品 -->
+			<div class="content_m_cart">
+				<div class="pro_allChoose">
+					<div class="cpt01">
+						<label for="allCho"><input type="checkbox" id="allCho">全选</label>
+					</div>
+					<div class="cpt02">商品信息</div>
+					<div class="cpt03">单价</div>
+					<div class="cpt04">数量</div>
+					<div class="cpt05">小计</div>
 				</div>
+				<div class="pro_list">
+					<table>
+						<colgroup>
+                   			<col width="415px">
+                   			<col width="175px">
+                   			<col width="215px">
+                   			<col width="185px">
+                		</colgroup>
+						<tbody>
+							<tr ng-repeat="product_row in product_rows">
+								<td class="reletcive">
+									<input type="checkbox" class="cart_pro_check">
+									<div class="cp_img all_img float_l">
+										<a href="#" target="_black">
+											<img src="https://img.meicicdn.com/p/117/116935/h-116935-1.jpg" height="90">
+										</a>
+									</div>
+									<div class="cp_info">
+										<div class="cp_info_name">
+											<a href="/product/detail/id/116935/saleid/114397.html" target="_blank" title="OMEGA 欧米茄 海马系列 精钢 男仕 机械表" class="ng-binding">
+			                                 OMEGA 欧米茄<br>海马系列 精钢 男仕 机械表
+			                                </a>
+										</div>
+										<div class="cp_info_props">
+											<div class="cp_col">
+												<span>颜色：银色</span>
+											</div>
+											<div class="cp_global"></div>
+											<div class="cp_act" ng-show="product_row.type == 1 || product_row.type == 2 || product_row.type == 3 || product_row.type == 4" style="display: none;">
+                               				</div>
+										</div>
+									</div>
+								</td>
+								<td align="center" class="ng-binding">￥28780.00</td>
+								<td align="center">
+									<div class="cart_num">
+                            			<div class="cart_num_m">
+                                			<a class="cart_jian" href="javascript:void(0);" ng-click="cal_minus()" ng-disabled="product_row.type == 5">-</a>
+                               				 <input class="cart_int ng-pristine ng-valid" type="text" ng-model="product_row.quantity" ng-change="cal_change()" ng-disabled="product_row.type == 5">
+                                			<a class="cart_jia" href="javascript:void(0);" ng-click="cal_add()" ng-disabled="product_row.type == 5">+</a>
+			                            </div>
+			                        </div>
+								</td>
+								<td align="center">
+									￥<span class="unitPrice">28780.00</span>
+								</td>
+								<td>
+									<div class="cp_btn">
+										<a class="cp_fav" href="javascript:void(0);" title="加入收藏" ng-click="add_favorite()">加入收藏</a>
+										<a class="cp_del" href="javascript:void(0);" ng-click="del_one()" title="删除">删除</a>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="cart_bar"></div>
 			</div>
-			<div class="specialOffer">
-				<div class="spe_top claerfix">
-					<div class="mid_line"></div>
-					<p class="spe_theme">特别推荐<br/>
-						<span>Special Offer</span>
-					</p>
-				</div>
-				<div class="special_con">
-					<div class="spe_con_left">
-						<a href="javascript:;">
-							<img src="../image/special/pic1.png">
-						</a>
-						<a href="javascript:;" style="margin-top: 12px;">
-							<img src="../image/special/pic2.png">
-						</a>
-					</div>
-					<div class="spe_con_mid">
-						<a href="javascript:;">
-							<img src="../image/special/pic3.png">
-						</a>
-					</div>
-					<div class="spe_con_right">
-						<a href="javascript:;">
-							<img src="../image/special/pic4.png">
-						</a>
-						<a href="javascript:;" style="margin-top: 12px;">
-							<img src="../image/special/pic5.png">
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="specialOffer">
-				<div class="spe_top claerfix">
-					<div class="mid_line"></div>
-					<p class="spe_theme">男仕精选<br/>
-						<span>For Him</span>
-					</p>
-				</div>
-				<div class="special_con">
-					<div class="spe_con_left">
-						<a href="javascript:;">
-							<img src="../image/forHim/pic1.png">
-						</a>
-						<a href="javascript:;" style="margin-top: 12px;">
-							<img src="../image/forHim/pic2.png">
-						</a>
-					</div>
-					<div class="spe_con_mid">
-						<a href="javascript:;">
-							<img src="../image/forHim/pic3.png">
-						</a>
-					</div>
-					<div class="spe_con_right">
-						<a href="javascript:;">
-							<img src="../image/forHim/pic4.png">
-						</a>
-						<a href="javascript:;" style="margin-top: 12px;">
-							<img src="../image/forHim/pic5.png">
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="specialOffer">
-				<div class="spe_top claerfix">
-					<div class="mid_line"></div>
-					<p class="spe_theme">男仕精选<br/>
-						<span>For Him</span>
-					</p>
-				</div>
-				<div class="special_con">
-					<div class="spe_con_left">
-						<a href="javascript:;">
-							<img src="../image/forHer/pic1.png">
-						</a>
-						<a href="javascript:;" style="margin-top: 12px;">
-							<img src="../image/forHer/pic2.png">
-						</a>
-					</div>
-					<div class="spe_con_mid">
-						<a href="javascript:;">
-							<img src="../image/forHer/pic3.png">
-						</a>
-					</div>
-					<div class="spe_con_right">
-						<a href="javascript:;">
-							<img src="../image/forHer/pic4.png">
-						</a>
-						<a href="javascript:;" style="margin-top: 12px;">
-							<img src="../image/forHer/pic5.png">
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="car_choose claerfix">
-				<div class="spe_top  sold_top">
-					<div class="mid_line"></div>
-					<p class="spe_theme">正被选购<br/>
-						<span>BeingSold</span>
-					</p>
-				</div>
-				<div class="scroll_pro" id="scroll_pro">
-					<ul class="car_choose_list claerfix">
-						<li><a href="#" target="_black">
-								<img src="../image/beingSold/pic1.jpg">
-								<p></p>
-								<div class="join_bag">已加入购物袋</div>
-							</a></li>
-						<li><a href="#" target="_black">
-								<img src="../image/beingSold/pic2.jpg" alt="">
-								<p></p>
-								<div class="join_bag">已加入购物袋</div>
-							</a></li>
-						<li><a href="#" target="_black" >
-								<img src="../image/beingSold/pic3.jpg" alt="">
-								<p></p>
-								<div class="join_bag">已加入购物袋</div>
-							</a></li>
-						<li><a href="#" target="_black" >
-								<img src="../image/beingSold/pic4.jpg" alt="">
-								<p></p>
-								<div class="join_bag">已加入购物袋</div>
-							</a></li>
-						<li><a href="#" target="_black" >
-								<img src="../image/beingSold/pic5.jpg" alt="">
-								<p></p>
-								<div class="join_bag">已加入收藏</div>
-							</a></li>
-						<li><a href="#" target="_black">
-								<img src="../image/beingSold/pic6.jpg" alt="">
-								<p></p>
-								<div class="join_bag">已加入购物袋</div>
-							</a></li>
-						<li><a href="#" target="_black">
-								<img src="../image/beingSold/pic7.jpg" alt="">
-								<p></p>
-								<div class="join_bag">已加入收藏</div>
-							</a></li>
-						<li><a href="#" target="_black">
-								<img src="../image/beingSold/pic8.jpg" alt="">
-								<p></p>
-								<div class="join_bag">已加入购物袋</div>
-							</a></li>
-						<li><a href="#" target="_black">
-								<img src="../image/beingSold/pic9.jpg" alt="">
-								<p></p>
-								<div class="join_bag">已加入购物袋</div>
-							</a></li>
-						<li><a href="#" target="_black">
-								<img src="../image/beingSold/pic10.jpg" alt="">
-								<p></p>
-								<div class="join_bag">已加入购物袋</div>
-							</a></li>
-						<li><a href="#" target="_black">
-								<img src="../image/beingSold/pic11.jpg" alt="">
-								<p></p>
-								<div class="join_bag">已加入收藏</div>
-							</a></li>
-						<li><a href="#" target="_black">
-								<img src="../image/beingSold/pic12.jpg" alt="">
-								<p></p>
-								<div class="join_bag">已加入收藏</div>
-							</a></li>
-						<li><a href="#" target="_black">
-								<img src="../image/beingSold/pic13.jpg" alt="">
-								<p></p>
-								<div class="join_bag">已加入购物袋</div>
-							</a></li>
-						<li><a href="#" target="_black">
-								<img src="../image/beingSold/pic14.jpg" alt="">
-								<p></p>
-								<div class="join_bag">已加入收藏</div>
-							</a></li>
-						<li><a href="#" target="_black">
-								<img src="../image/beingSold/pic15.jpg" alt="">
-								<p></p>
-								<div class="join_bag">已加入购物袋</div>
-							</a></li>
-						<li><a href="#" target="_black">
-								<img src="../image/beingSold/pic16.jpg" alt="">
-								<p></p>
-								<div class="join_bag">已加入收藏</div>
-							</a></li>
-						<li><a href="#" target="_black">
-								<img src="../image/beingSold/pic17.jpg" alt="">
-								<p></p>
-								<div class="join_bag">已加入购物袋</div>
-							</a></li>
-						<li><a href="#" target="_black">
-								<img src="../image/beingSold/pic18.jpg" alt="">
-								<p></p>
-								<div class="join_bag">已加入收藏</div>
-							</a></li>
-						<li><a href="#" target="_black">
-								<img src="../image/beingSold/pic19.jpg" alt="">
-								<p></p>
-								<div class="join_bag">已加入购物袋</div>
-							</a></li>
-						<li><a href="#" target="_black">
-								<img src="../image/beingSold/pic20.jpg" alt="">
-								<p></p>
-								<div class="join_bag">已加入购物袋</div>
-							</a></li>
-						<li><a href="#" target="_black">
-								<img src="../image/beingSold/pic21.jpg" alt="">
-								<p></p>
-								<div class="join_bag">已加入收藏</div>
-							</a></li>
-						<li><a href="#" target="_black">
-								<img src="../image/beingSold/pic22.jpg" alt="">
-								<p></p>
-								<div class="join_bag">已加入购物袋</div>
-							</a></li>
-						<li><a href="#" target="_black">
-								<img src="../image/beingSold/pic23.jpg" alt="">
-								<p></p>
-								<div class="join_bag">已加入购物袋</div>
-							</a></li>
-						<li><a href="#" target="_black">
-								<img src="../image/beingSold/pic24.jpg" alt="">
-								<p></p>
-								<div class="join_bag">已加入收藏</div>
-							</a></li>
-						<li><a href="#" target="_black">
-								<img src="../image/beingSold/pic25.jpg" alt="">
-								<p></p>
-								<div class="join_bag">已加入收藏</div>
-							</a></li>
-						<li><a href="#" target="_black">
-								<img src="../image/beingSold/pic26.jpg" alt="">
-								<p></p>
-								<div class="join_bag">已加入收藏</div>
-							</a></li>
-						<li><a href="#" target="_black">
-								<img src="../image/beingSold/pic27.jpg" alt="">
-								<p></p>
-								<div class="join_bag">已加入购物袋</div>
-							</a></li>
-						<li><a href="#" target="_black">
-								<img src="../image/beingSold/pic28.jpg" alt="">
-								<p></p>
-								<div class="join_bag">已加入购物袋</div>
-							</a></li>
-						<li><a href="#" target="_black">
-								<img src="../image/beingSold/pic29.jpg" alt="">
-								<p></p>
-								<div class="join_bag">已加入购物袋</div>
-							</a></li>
-						<li><a href="#" target="_black">
-								<img src="../image/beingSold/pic30.jpg" alt="">
-								<p></p>
-								<div class="join_bag">已加入收藏</div>
-							</a></li>
-					</ul>
-					<div class="prev_btn dire_btn"></div>
-					<div class="next_btn dire_btn"></div>
-				</div>
-			</div>
+			<!-- 无商品 -->
+			<div class="no_pro"></div>
+			<!-- 推荐商品 -->
+			<div class="guess_you_like"></div>
 		</div>
+	</div>
+</div>
+<!-- consultant在线咨询 -->
+	<div class="consultant">
+		<ul class="sultantList">
+			<li class="consult_app">
+				<a href="#" class="fix_meiciApp">
+					<em></em>
+				</a>
+				<div class="consult_app_m">
+					<div class="consult_app_sj"></div>
+					<div class="consult_app_code">
+						<img src="../image/listPage/ewm_indexTop_1.png" alt="">
+					</div>
+				</div>
+			</li>
+			<li class="consult_ol">
+				<a href="#" class="fix_onlineCon">
+				<em></em>
+				</a>
+			</li>
+			<li class="consult_qq">
+				<a href="#" class="fix_QQcon">
+					<em></em>
+				</a>
+			</li>
+			<li class="backTop">
+				<a href="#" class="fix_backTop">
+					<em></em>
+				</a>
+			</li>
+		</ul>
 	</div>
 <!-- footer -->
 	<div class="footer">
@@ -581,7 +390,7 @@
 				</div>
 				<div class="above_con3 above_con">
 					<p>订阅美西杂志</p>
-					<input type="text" class="subscibe" placeholder="E-mail">
+					<input type="text" class="subscibe">
 					<a href="#" class="sub_btn">即刻订阅</a>
 				</div>
 				<div class="above_con4 above_con">
@@ -651,17 +460,6 @@
 		</div>
 	</div>
 	<script type="text/javascript" src="../js/common.js"></script>
-	<script type="text/javascript" src="../js/carousel.js"></script>
-	<script type="text/javascript" src="https://cdn.bootcss.com/require.js/2.3.5/require.min.js" 
-	data-main="../js/index.js"></script>
-	<script type="text/javascript">
-		new Carousel({
-			el:$('carousel')
-		});
-		new CarouselB({
-			el:$('scroll_pro'),
-			timeout:3000
-		});
-	</script>
+	<script type="text/javascript" src="https://cdn.bootcss.com/require.js/2.3.5/require.min.js" data-main="../js/shoppingCart.js"></script>
 </body>
 </html>

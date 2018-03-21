@@ -1,0 +1,277 @@
+//主体内容	
+.container{
+	width: 100%;
+	background: #fff;
+	.content{
+		width: 100%;
+		.content_m{
+			width: 1200px;
+			margin: 0 auto;
+			.content_m_cart{
+				.pro_allChoose{
+					margin-bottom: 10px;
+				    height: 43px;
+				    border: solid 1px #e8e8e8;
+				    background: #f5f5f5;
+				    color: #333;
+				    line-height: 43px;
+				    font-size: 12px;
+				    div{
+				    	float: left;
+				    }
+				    .cpt01{
+				    	width: 190px;
+				    	label{
+				    		cursor:pointer;
+				    		#allCho{
+				    		margin: 0 3px 0 30px;
+				    		}
+				    	}
+				    }
+				    .cpt02{
+				    	width: 255px;
+				    }
+				    .cpt03{
+				    	width: 175px;
+   					 	text-align: center;
+				    }
+				    .cpt04{
+				    	width: 215px;
+				    	text-align: center;
+				    }
+				    .cpt05{
+				    	width: 185px;
+				    	text-align: center;
+				    }
+				}
+				.pro_list{
+					border: solid 1px #e8e8e8;
+					padding: 0 30px;
+    				font-size: 14px;
+					background: #fff;
+					td{
+						padding: 23px 0;
+						}
+					table{
+						width: 100%;
+						tr{
+							border-bottom: dashed 1px #eaeaea;
+						}
+						td,th{
+						    word-wrap: break-word;
+						    overflow: hidden;
+						}
+						tbody{
+							display: table-row-group;
+						    vertical-align: middle;
+						    border-color: inherit;
+						    .reletcive{
+						    	position: relative;
+						    	input{
+						    		float: left;
+						    	}
+						    	.cp_img{
+							    	float: left;
+	    							display: inline;
+						    	    width: 98px;
+								    height: 93px;
+								    text-align: center;
+								    padding-top: 5px;
+	    							margin-left: 30px;
+						    	}
+						    	.cp_info {
+						    		float: left;
+    								display: inline;
+								    margin-left: 30px;
+								    text-align: left;
+								    .cp_info_name{
+								    	width: 250px;
+    									font-size: 14px;
+    									line-height: 1.7;
+    									overflow: hidden;
+    									white-space: nowrap;
+    									text-overflow: ellipsis;
+								    }
+								    .cp_info_props{
+								    	color: #999;
+    									margin-top: 5px;
+    									.cp_col{
+    										margin-bottom: 3px;
+    										span{
+    											margin-right: 15px;
+    											font-size: 12px;
+    										}
+    									}
+    									.cp_global{
+    										float: left;
+   		 									margin-bottom: 4px;
+    									}
+								    }
+								}
+						    }
+						    td{
+						    	.cart_num{
+						    		.cart_num_m{
+						    			    width: 102px;
+										    overflow: hidden;
+										    border: 1px solid #d9d9d9;
+						    			a,input{
+											display: block;
+										    float: left;
+										    width: 22px;
+										    height: 22px;
+										    color: #333;
+										    text-align: center;
+	    									line-height: 22px;
+										}
+										.cart_jian {
+										    border-right: 1px solid #d9d9d9;
+										    font-family: "宋体";
+										    font-size: 16px;
+										    line-height: 1.6;
+										}
+										.cart_int{
+											border: none;
+										    padding: 0;
+										    width: 56px;
+										}
+										.cart_jia {
+										    border-left: 1px solid #d9d9d9;
+										    font-family: "宋体";
+										    font-size: 16px;
+										    line-height: 1.6;
+										}
+						    		}
+									
+						    	}
+						    }
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+// 固定咨询栏
+.consultant{
+	position: fixed;
+	right: 0;
+	bottom: 100px;
+	border: solid 1px #ddd;
+    background: #fff;
+    z-index: 10;
+    .sultantList{
+    	li{
+    		position: relative;
+    		a{
+    			width: 58px;
+			    height: 46px;
+			    padding-top: 12px;
+			    border-bottom: solid 1px #ddd;
+    		}
+    		em{
+    				width: 35px;
+    				height: 35px;
+    				background: url(../image/listPage/consult.png) no-repeat;
+    				margin: 0 auto;
+    			}
+    		.consult_app_m{
+    			display: none;
+    			position: absolute;
+    			top: -17px;
+			    left: -107px;
+			    padding-right: 10px;
+			    z-index: 2;
+			    .consult_app_sj{
+			    	width: 8px;
+				    height: 17px;
+				    background: url(../image/headico.png) -97px -3px no-repeat;
+				    position: absolute;
+				    z-index: 2;
+				    top: 38px;
+				    right: 3px;
+			    }
+			    .consult_app_code{
+			    	padding: 10px;
+				    background: #fff;
+				    border: solid 1px #ececec;
+				    font-size: 0;
+			    }
+    		}
+    	
+    		
+    		.fix_onlineCon{
+    			em{
+    				background-position: left -35px;
+    			}
+    		}
+    		.fix_QQcon{
+    			em{
+    				background-position: left -70px;
+    			}
+    		}
+    		.fix_backTop{
+    			em{
+    				background-position: left -110px;
+    			}
+    		}
+    	}
+    	.consult_app{
+    		
+    		&:hover{
+				.consult_app_m{
+					display: block;
+				}
+    			.fix_meiciApp{
+    				background: #666;
+    			 	em{
+
+	    				background-position: -35px top;
+    			 	}
+    			}
+    		}
+    		.fix_meiciApp{
+    			em{
+    				background-position: left top;
+    			}
+    		}
+    	}
+    	.consult_ol{
+    		&:hover{
+    			.fix_onlineCon{
+    				background: #666;
+    			 	em{
+
+	    				background-position: -35px -35px;
+    			 	}
+    			}
+    		}
+    	}
+    	.consult_qq{
+    		&:hover{
+    			.fix_QQcon{
+    				background: #666;
+    			 	em{
+
+	    				background-position: -35px -70px;
+    			 	}
+    			}
+    		}
+    	}
+    	.backTop{
+    		&:hover{
+    			.fix_backTop{
+    				background: #666;
+    			 	em{
+
+	    				background-position: -35px -110px;
+    			 	}
+    			}
+    		}
+    	}
+    }
+}

@@ -15,6 +15,13 @@ require(['jquery'],function(){
 		},function(){
 			$(this).children('.QRcode').fadeOut(150);
 		});
+		//购物袋
+		$('.shopCart').hover(function(){
+			$(this).next('.headerCart_m').css('display','block');
+		},function(){
+			$(this).next('.headerCart_m').css('display','none');
+		});
+
 		//顶部菜单
 
 		// 获取菜单LI

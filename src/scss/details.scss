@@ -32,6 +32,8 @@ body{
 					    cursor: pointer;
 				    }
 				    .prev-b{
+				    	position: absolute;
+				    	top:0;
 				    	background-position: center -32px;
 				    }
 				    .next-b{
@@ -51,23 +53,44 @@ body{
 				    			height: 60px;
 				    			border: 1px solid #fff;
 				    		}
+				    		.choosed_img{
+				    			border-color: #ccc;
+				    		}
 				    	}
 				    }
 			    }
 			    .middle-box{
 			    	float: left;
 			    	margin-left: 20px;
+			    	position: relative;
 			    	img{
 			    		height: 460px;
+			    	}
+			    	.shadow{
+			    		display: none;
+						// top: -1px;
+					    width: 185px;
+					    height: 220px;
+					    position: absolute;
+					    border: 1px solid #eee;
+					    overflow: hidden;
+    					background-color: #fff;
+    					opacity: .6;
+    					cursor:pointer;
 			    	}
 			    }
 			    .large-box{
 			    	position: absolute;
-					left: 448px;
+					left: 488px;
 					width: 390px;
 					height: 462px;
 					overflow: hidden;
 					display: none;
+					z-index: 8;
+					img{
+						position: absolute;
+					}
+
 			    }
 			}
 			.con_top_info{
@@ -241,10 +264,13 @@ body{
 		}
 
 		.intro_menu{
+			width: 100%;
 			margin-top: 20px;
 			height: 60px;
 			overflow: hidden;
+			position: relative;
 			.intro_menu_m{
+				width: 1200px;
 				background: #fff;
 				.ment_list{
 					li{
@@ -290,10 +316,8 @@ body{
 			position: relative;
 			margin-top: 20px;
 			.pro_pres{
-				display: none;
-				position: absolute;
-				left: 0;
-				top: 0;
+				// display: none;
+				
 				.pro_info{
 					background: #fff;
 					.pro_rec_con{
@@ -351,7 +375,8 @@ body{
 						    margin-top: 25px
 						}
 						.proBrand_r{
-							width: 330px;
+							float: right;
+							width: 329px;
     						text-align: center;
     						position: relative;
 							img{
@@ -389,28 +414,32 @@ body{
 				}
 			}
 			.pro_size{
+				display: none;
 				width:1140px;
-				position: absolute;
-				left: 0;
-				top: 0;
+				// position: absolute;
+				// left: 0;
+				// top: 0;
 				padding: 0 30px;
 				background: #fff;
+				z-index: 3;
 				.pro_size_top{
-					padding: 0 0 5px 70px;
 					.M_icon{
 						.spe_theme{
 							font-size: 12px;
 							width: 100px;
+							padding-left: 63px;
+							line-height: 12px;
 						}
 					}
 					.pro_z_r{
 						float: right;
-						background: url(../image/details/pro_size_r.png) no-repeat right top;
+						background: url(../image/details/pro_size_r.png) no-repeat right 8px;
 						padding-right: 15px;
     					margin-top: 20px;
+    					font-size: 12px;
 						span{
 							color: #999;
-							font-size: 12px;
+							
 						}
 						a{
 							color: #666;
@@ -419,12 +448,46 @@ body{
 						}
 					}
 				}
+				.pro_size_con{
+					width: 100%;
+					padding-bottom: 20px;
+					.proSizeTable{
+						font-size: 12px;
+						border-collapse: collapse;
+    					border-spacing: 0;
+						tbody{
+							display: table-row-group;
+						    vertical-align: middle;
+						    border-color: inherit;
+						    th,td{
+								word-wrap: break-word;
+    							overflow: hidden;
+    							text-align: center;
+    							padding: 10px 0;
+						    }
+						    tr{
+						    	display: table-row;
+							    vertical-align: inherit;
+							    border-color: inherit;
+						    }
+						}
+					}
+				}
 			}
 			.after_sale{
-				position: absolute;
-				left: 0;
-				top: 0;
+				display:none;
+				// position: absolute;
+				// left: 0;
+				// top: 0;
 				padding: 0 30px;
+				width:1140px;
+				background: #fff;
+				font-size: 12px;
+				z-index: 3;
+				.pro_service{
+					line-height: 2;
+    				padding: 10px 15px 20px 15px;
+				}
 			}
 		}
 	}
@@ -438,7 +501,7 @@ body{
     	float: left;
     	width: 63px;
     	height: 30px;
-    	background: url(../image/details/m.png) no-repeat;
+    	background: url(../image/details/m.png) no-repeat left -2px;
 	}
 	p{
 		font-size: 12px;
@@ -450,6 +513,7 @@ body{
 		}
 	}
 }
+
 
 // 猜你喜欢 和 推荐
 .pro_rec{
@@ -480,13 +544,14 @@ body{
 		}
 		.car_choose_list{
 			position: absolute;
+			left: -1052px;
 			width: 3096px;
 			li{
 				height: 297px;
 			    overflow: hidden;
 			    float: left;
 			    width: 218px;
-			    margin: 0 20px;
+			    padding: 0 20px;
 				a{
 					width: 218px;
 					text-align: center;
@@ -520,6 +585,126 @@ body{
 .guess_you_like{
 	width: 1200px;
 	margin: 0 auto;
+}
+
+// 固定咨询栏
+.consultant{
+	position: fixed;
+	right: 0;
+	bottom: 100px;
+	border: solid 1px #ddd;
+    background: #fff;
+    z-index: 10;
+    .sultantList{
+    	li{
+    		position: relative;
+    		a{
+    			width: 58px;
+			    height: 46px;
+			    padding-top: 12px;
+			    border-bottom: solid 1px #ddd;
+    		}
+    		em{
+    				width: 35px;
+    				height: 35px;
+    				background: url(../image/listPage/consult.png) no-repeat;
+    				margin: 0 auto;
+    			}
+    		.consult_app_m{
+    			display: none;
+    			position: absolute;
+    			top: -17px;
+			    left: -107px;
+			    padding-right: 10px;
+			    z-index: 2;
+			    .consult_app_sj{
+			    	width: 8px;
+				    height: 17px;
+				    background: url(../image/headico.png) -97px -3px no-repeat;
+				    position: absolute;
+				    z-index: 2;
+				    top: 38px;
+				    right: 3px;
+			    }
+			    .consult_app_code{
+			    	padding: 10px;
+				    background: #fff;
+				    border: solid 1px #ececec;
+				    font-size: 0;
+			    }
+    		}
+    	
+    		
+    		.fix_onlineCon{
+    			em{
+    				background-position: left -35px;
+    			}
+    		}
+    		.fix_QQcon{
+    			em{
+    				background-position: left -70px;
+    			}
+    		}
+    		.fix_backTop{
+    			em{
+    				background-position: left -110px;
+    			}
+    		}
+    	}
+    	.consult_app{
+    		
+    		&:hover{
+				.consult_app_m{
+					display: block;
+				}
+    			.fix_meiciApp{
+    				background: #666;
+    			 	em{
+
+	    				background-position: -35px top;
+    			 	}
+    			}
+    		}
+    		.fix_meiciApp{
+    			em{
+    				background-position: left top;
+    			}
+    		}
+    	}
+    	.consult_ol{
+    		&:hover{
+    			.fix_onlineCon{
+    				background: #666;
+    			 	em{
+
+	    				background-position: -35px -35px;
+    			 	}
+    			}
+    		}
+    	}
+    	.consult_qq{
+    		&:hover{
+    			.fix_QQcon{
+    				background: #666;
+    			 	em{
+
+	    				background-position: -35px -70px;
+    			 	}
+    			}
+    		}
+    	}
+    	.backTop{
+    		&:hover{
+    			.fix_backTop{
+    				background: #666;
+    			 	em{
+
+	    				background-position: -35px -110px;
+    			 	}
+    			}
+    		}
+    	}
+    }
 }
 // 底部footer
 .footer{
